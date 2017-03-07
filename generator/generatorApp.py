@@ -11,3 +11,6 @@ js_template = loader.get_template('template.js')
 result_js_string = js_template.render(name='hahaha')
 print(result_js_string)
 
+# write to app.js file
+with open("./app.js", 'a') as out:
+    out.write(result_js_string + '\n')

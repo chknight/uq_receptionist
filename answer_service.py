@@ -3,7 +3,7 @@ import tornado.ioloop
 import tornado.web
 import MySQLdb
 
-input.close()
+
 connection = MySQLdb.connect('localhost', 'root', '19941005', 'uq_receptionist')
 connection.set_character_set('utf8')
 connection.cursor().execute('SET NAMES utf8;')

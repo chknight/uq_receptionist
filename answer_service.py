@@ -2,6 +2,7 @@ import nltk
 import tornado.ioloop
 import tornado.web
 import MySQLdb
+import json
 
 
 connection = MySQLdb.connect('localhost', 'root', '19941005', 'uq_receptionist')
@@ -18,7 +19,7 @@ def fetchDataFromDataBase(key, target):
     print(key)
     print(target)
     key.upper()
-    cursor.execute('''SELECT * FROM course WHERE name=%s''', key)
+    cursor.execute('''SELECT * FROM course WHERE name=%s''', [key])
     result = cursor.fetchone()
 
     return result[keyword[target]]
@@ -36,8 +37,9 @@ class MainHandler(tornado.web.RequestHandler):
 
     def post(self):
         self.set_header("Content-Type", "text/plain")
-        massage = self.get_body_argument("name")
-        target = self.get_body_argument('target')
+        data = json.loads(self.request.body)
+        massage = data['name'] 
+        target = data['target']
         result = fetchDataFromDataBase(massage, target)
         self.write("{result:" + result + "}")
 

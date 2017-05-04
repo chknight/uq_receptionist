@@ -14,20 +14,20 @@ connection.cursor().execute('SET character_set_connection=utf8;')
 keyword = {'name': 0, 'description': 1, 'level': 3, 'unit': 4, 'content': 5, 'assessment': 6, 'coordinator': 7, 'duration': 8, 'code': 9}
 
 
-def fetchDataFromDataBase(key, target):
+def fetchDataFromDataBase(parameter):
     cursor = connection.cursor()
-    print(key)
-    print(target)
-    key.upper()
-    cursor.execute('''SELECT * FROM course WHERE name=%s''', [key])
+    print(parameter)
+    name = parameter['Course'].upper()
+    print(name)
+    cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
+    print(result)
 
-    return result[keyword[target]]
+    return result[keyword['description']]
 
 class MainHandler(tornado.web.RequestHandler):
 
     def set_default_headers(self):
-        print("setting headers!!!")
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header("Access-Control-Allow-Headers", "x-requested-with")
         self.set_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
@@ -38,9 +38,9 @@ class MainHandler(tornado.web.RequestHandler):
     def post(self):
         self.set_header("Content-Type", "text/plain")
         data = json.loads(self.request.body)
-        massage = data['name'] 
-        target = data['target']
-        result = fetchDataFromDataBase(massage, target)
+        result = data['result']
+        parameter = result['parameters']
+        result = fetchDataFromDataBase(parameter)
         self.write("{result:" + result + "}")
 
 

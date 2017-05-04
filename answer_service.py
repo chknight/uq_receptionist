@@ -13,6 +13,13 @@ connection.cursor().execute('SET character_set_connection=utf8;')
 
 keyword = {'name': 0, 'description': 1, 'level': 3, 'unit': 4, 'content': 5, 'assessment': 6, 'coordinator': 7, 'duration': 8, 'code': 9}
 
+response_body = {
+    "speech": "",
+    "displayText": "",
+    "data": {...},
+    "contextOut": [...],
+    "source": "me"
+}
 
 def fetchDataFromDataBase(parameter):
     cursor = connection.cursor()
@@ -41,7 +48,10 @@ class MainHandler(tornado.web.RequestHandler):
         result = data['result']
         parameter = result['parameters']
         result = fetchDataFromDataBase(parameter)
-        self.write("{result:" + result + "}")
+        response = response_body
+        response['speech'] = result
+        response['displayText'] = result
+        self.write(response)
 
 
 def make_app():

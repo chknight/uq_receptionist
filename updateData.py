@@ -17,7 +17,7 @@ def fetch_all_data():
         replace = result[0][0:index - 1]
       else:
         replace = result[0][0:index]
-      print replace  
+      print(replace)
       cursor.execute ("""
        UPDATE course
        SET name=%s

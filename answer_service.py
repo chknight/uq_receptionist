@@ -11,8 +11,6 @@ connection.cursor().execute('SET NAMES utf8;')
 connection.cursor().execute('SET CHARACTER SET utf8;')
 connection.cursor().execute('SET character_set_connection=utf8;')
 
-keyword = {'name': 0, 'description': 1, 'level': 3, 'unit': 4, 'content': 5, 'assessment': 6, 'coordinator': 7, 'duration': 8, 'code': 9}
-
 response_body = {
     "speech": "",
     "displayText": "",
@@ -21,16 +19,37 @@ response_body = {
     "source": "me"
 }
 
-def fetchDataFromDataBase(parameter):
-    cursor = connection.cursor()
+def getKeywrodFromParameter(parameter):
+    for key in parameter.keys():
+        if parameter[key] is not "":
+            print(parameter[key])
+            return parameter[key].upper()
+
+def fetchCourseInfoFromDataBase(parameter, field_name):
+    cursor = connection.cursor(MySQLdb.cursors.DictCursor)
     print(parameter)
-    name = parameter['Course'].upper()
+    name = getKeywrodFromParameter(parameter)
     print(name)
     cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
     print(result)
 
-    return result[keyword['description']]
+    return result[field_name]
+
+def fetchUnitFromDatabase(parameter):
+    result = fetchCourseInfoFromDataBase(parameter, 'unit')
+    return result
+
+def fetchDescriptionFromDatabase(parameter):
+    result = fetchCourseInfoFromDataBase(parameter, 'description')
+    return result
+
+
+def process_request(intentType, parameter):
+    return {
+        'CourseDescriptionIntent': fetchDescriptionFromDatabase(parameter),
+        'CourseUnitIntent': fetchUnitFromDatabase(parameter)
+    }.get(intentType)
 
 class MainHandler(tornado.web.RequestHandler):
 
@@ -44,10 +63,12 @@ class MainHandler(tornado.web.RequestHandler):
 
     def post(self):
         self.set_header("Content-Type", "text/plain")
-        data = json.loads(self.request.body)
+        data = json.loads(self.request.body.decode('ascii'))
         result = data['result']
         parameter = result['parameters']
-        result = fetchDataFromDataBase(parameter)
+        intentType = result['metadata']['intentName']
+
+        result = process_request(intentType, parameter)
         response = response_body
         response['speech'] = result
         response['displayText'] = result

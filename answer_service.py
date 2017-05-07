@@ -16,8 +16,8 @@ keyword = {'name': 0, 'description': 1, 'level': 3, 'unit': 4, 'content': 5, 'as
 response_body = {
     "speech": "",
     "displayText": "",
-    "data": {...},
-    "contextOut": [...],
+    "data": {},
+    "contextOut": [],
     "source": "me"
 }
 

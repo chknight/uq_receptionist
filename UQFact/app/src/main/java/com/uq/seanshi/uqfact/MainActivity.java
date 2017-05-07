@@ -1,6 +1,10 @@
 package com.uq.seanshi.uqfact;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.speech.RecognitionListener;
+import android.speech.RecognizerIntent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Map;
 
 import ai.api.AIListener;
@@ -31,7 +37,9 @@ import com.iflytek.cloud.RecognizerResult;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechError;
 import com.iflytek.cloud.SpeechRecognizer;
+import com.iflytek.cloud.SpeechSynthesizer;
 import com.iflytek.cloud.SpeechUtility;
+import com.iflytek.cloud.SynthesizerListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -48,12 +56,15 @@ public class MainActivity extends AppCompatActivity {
     private static String TAG = MainActivity.class.getSimpleName();
     // 语音听写对象
     private SpeechRecognizer mIat;
+    private SpeechSynthesizer mTts;
 
     private Button listenButton;
     private TextView resultTextView;
     private TextView requestTextView;
 
     private Toast mToast;
+
+    private final int REQ_CODE_SPEECH_INPUT = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +77,13 @@ public class MainActivity extends AppCompatActivity {
         //处理语音合成关键类
         // 使用SpeechRecognizer对象，可根据回调消息自定义界面；
         mIat = SpeechRecognizer.createRecognizer(MainActivity.this, mInitListener);
+        mTts = SpeechSynthesizer.createSynthesizer(MainActivity.this, null);
 
         listenButton = (Button) findViewById(R.id.listenButton);
         resultTextView = (TextView) findViewById(R.id.resultTextView);
         requestTextView = (TextView) findViewById(R.id.requestTextView);
 
-        final AIConfiguration config = new AIConfiguration("b198f482984c49cf8528bf5b2b49b64e",
+        final AIConfiguration config = new AIConfiguration("fd151bd8a1674291a82c2baa037a1a5e",
                 AIConfiguration.SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System);
 
@@ -112,6 +124,56 @@ public class MainActivity extends AppCompatActivity {
         public void onInit(int code) {
             Log.d(TAG, "SpeechRecognizer init() code = " + code);
         }
+    };
+
+    // 合成- 文字转语音
+    private void Text2Voice(String str) {
+        // 1.创建SpeechSynthesizer对象, 第二个参数：本地合成时传InitListener
+        SpeechSynthesizer mTts = SpeechSynthesizer
+                .createSynthesizer(this, null);
+        // 2.合成参数设置，详见《科大讯飞MSC API手册(Android)》SpeechSynthesizer 类
+        mTts.setParameter(SpeechConstant.VOICE_NAME, "Catherine");// 设置发音人
+        mTts.setParameter(SpeechConstant.SPEED, "50");// 设置语速
+        mTts.setParameter(SpeechConstant.VOLUME, "80");// 设置音量，范围0~100
+        mTts.setParameter(SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_CLOUD); // 设置云端
+
+        // 3.开始合成
+        mTts.startSpeaking(str, new MySynListener());
+    }
+
+    // 合成监听器
+    private class MySynListener implements SynthesizerListener {
+        // 会话结束回调接口，没有错误时，error为null
+        public void onCompleted(SpeechError error) {
+        }
+
+        // 缓冲进度回调
+        // percent为缓冲进度0~100，beginPos为缓冲音频在文本中开始位置，endPos表示缓冲音频在文本中结束位置，info为附加信息。
+        public void onBufferProgress(int percent, int beginPos, int endPos,
+                                     String info) {
+        }
+
+        // 开始播放
+        public void onSpeakBegin() {
+        }
+
+        // 暂停播放
+        public void onSpeakPaused() {
+        }
+
+        // 播放进度回调
+        // percent为播放进度0~100,beginPos为播放音频在文本中开始位置，endPos表示播放音频在文本中结束位置.
+        public void onSpeakProgress(int percent, int beginPos, int endPos) {
+        }
+
+        // 恢复播放回调接口
+        public void onSpeakResumed() {
+        }
+
+        // 会话事件回调接口
+        public void onEvent(int arg0, int arg1, int arg2, Bundle arg3) {
+        }
+
     };
 
     /**
@@ -197,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("request string: " + voiceResult);
                     final AIRequest aiRequest = new AIRequest();
                     aiRequest.setQuery(voiceResult);
-                    requestTextView.setText("request: "+ans);
+                    requestTextView.setText("request: "+voiceResult);
                     new AsyncTask<AIRequest, Void, AIResponse>() {
                         @Override
                         protected AIResponse doInBackground(AIRequest... requests) {
@@ -213,8 +275,10 @@ public class MainActivity extends AppCompatActivity {
                         protected void onPostExecute(AIResponse aiResponse) {
                             if (aiResponse != null) {
                                 // process aiResponse here
-                                resultTextView.setText(aiResponse.getResult().getMetadata().getIntentName());
-                                System.out.println("response: " + aiResponse.getResult().getAction());
+                                resultTextView.setText(aiResponse.getResult().getFulfillment().getSpeech());
+                                System.out.println("response Intent: " + aiResponse.getResult().getMetadata().getIntentName());
+                                System.out.println("response Intent: " + aiResponse.getResult().getResolvedQuery());
+                                Text2Voice(aiResponse.getResult().getFulfillment().getSpeech());
                             }
                         }
                     }.execute(aiRequest);
@@ -250,6 +314,8 @@ public class MainActivity extends AppCompatActivity {
         // 设置语言
         mIat.setParameter(SpeechConstant.LANGUAGE, "en_us");
         // 设置语言区域
-        mIat.setParameter(SpeechConstant.ACCENT, "mandarin");
+//        mIat.setParameter(SpeechConstant.ACCENT, "mandarin");
     }
+
+
 }

@@ -21,7 +21,7 @@ response_body = {
 
 def getKeywrodFromParameter(parameter):
     for key in parameter.keys():
-        if parameter[key] is not "":
+        if parameter[key].encode('ASCII') != "":
             print(parameter[key])
             return parameter[key].upper()
 
@@ -33,6 +33,8 @@ def fetchCourseInfoFromDataBase(parameter, field_name):
     cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
     print(result)
+    if result is None:
+        return 'No Such course in uq'
 
     return result[field_name]
 

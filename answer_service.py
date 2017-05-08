@@ -46,18 +46,25 @@ def getKeywordFromText(text):
 def compare_keyword(keyword):
     matched = []
     # finalList = []
-    index = 1
+    index = 0
     keywords = keyword.split(',')
-    for key in all_general_questions:
-        matched[index] = 0
+    for row in all_keywords:
+        matched.append(0)
         for keyword in keywords:
-            if keyword in key:
-                matched[index] +=  + 1
+            if keyword in row:
+                matched[index] += 1
         # finalList.append(matched[index])
         index += 1
 
-    sorted_x = matched.sort(reverse=True)
+    sorted_x = sorted(range(len(matched)), key=lambda k: matched[k], reverse=True)
     print(sorted_x)
+    print(matched[sorted_x[0]])
+    index = sorted_x[0]
+    print(index)
+    if matched[index] / keywords.count() >= 0.5:
+        return all_general_questions[index]
+    else:
+        return "Sorry, we could not answer this question."
 
 
 # fetch the value from parameter json expression
@@ -66,6 +73,7 @@ def getValueFromParameter(parameter):
         if parameter[key].encode('ASCII') != "":
             print(parameter[key])
             return parameter[key].upper()
+    return None
 
 def fetchCourseInfoFromDataBase(parameter, field_name):
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
@@ -116,8 +124,11 @@ def fetchCoordinatorFromDatabase(parameter):
     result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
     return result
 
-def fetchSchoolLocationFromDatabase(parameter):
+
+def fetchSchoolLocationFromDatabase(parameter, original_question):
     name = getValueFromParameter(parameter)
+    if name is None:
+        return process_general_question(original_question)
     result = fetchInfoFromDatabase('school', 'location', 'name', name)
     return result
 
@@ -137,7 +148,8 @@ def fetchSchoolPhoneFromDatabase(parameter):
 # process request ask for some general questions
 def process_general_question(original_question):
     keyword = getKeywordFromText(original_question)
-    result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)
+    result = compare_keyword(keyword)
+    # result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)
     return result
 
 
@@ -150,7 +162,7 @@ def process_request(intent_type, parameter, original_question):
     elif intent_type == 'DefaultFallbackIntent':
         return process_general_question(original_question)
     elif intent_type == 'LocationIntent':
-        return fetchSchoolLocationFromDatabase(parameter)
+        return fetchSchoolLocationFromDatabase(parameter, original_question)
     elif intent_type == 'LecturerIntent':
         return fetchCoordinatorFromDatabase(parameter)
     elif intent_type == 'GeneralIntent':
@@ -192,7 +204,15 @@ def make_app():
         (r"/", MainHandler),
     ])
 
+def prepare_keyword():
+    for row in all_general_questions:
+        keywords = row['keyword'].split(',')
+        all_keywords.append(keywords)
+
 all_general_questions = fetchAllDataFromDatabase('general_question')
+all_keywords = []
+prepare_keyword()
+
 
 if __name__ == "__main__":
     app = make_app()

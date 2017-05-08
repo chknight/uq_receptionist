@@ -1,7 +1,6 @@
 package com.uq.seanshi.uqfact;
 
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
+import android.app.ListActivity;
 import android.os.AsyncTask;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -11,14 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Locale;
-import java.util.Map;
 
 import ai.api.AIListener;
 import ai.api.AIServiceException;
@@ -48,6 +45,7 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,12 +57,16 @@ public class MainActivity extends AppCompatActivity {
     private SpeechSynthesizer mTts;
 
     private Button listenButton;
+    private Button submitQueryButton;
     private TextView resultTextView;
-    private TextView requestTextView;
+    private EditText requestTextView;
+    private ListView listView;
+
+    private ChatArrayAdapter chatArrayAdapter;
+
+    private boolean side = false;
 
     private Toast mToast;
-
-    private final int REQ_CODE_SPEECH_INPUT = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,14 +82,51 @@ public class MainActivity extends AppCompatActivity {
         mTts = SpeechSynthesizer.createSynthesizer(MainActivity.this, null);
 
         listenButton = (Button) findViewById(R.id.listenButton);
-        resultTextView = (TextView) findViewById(R.id.resultTextView);
-        requestTextView = (TextView) findViewById(R.id.requestTextView);
+        submitQueryButton = (Button) findViewById(R.id.submit);
+//        resultTextView = (TextView) findViewById(R.id.resultTextView);
+        requestTextView = (EditText) findViewById(R.id.requestTextView);
+        listView = (ListView) findViewById(R.id.listView);
+
+        chatArrayAdapter = new ChatArrayAdapter(getApplicationContext(), R.layout.right, mTts);
+        listView.setAdapter(chatArrayAdapter);
 
         final AIConfiguration config = new AIConfiguration("fd151bd8a1674291a82c2baa037a1a5e",
                 AIConfiguration.SupportedLanguages.English,
                 AIConfiguration.RecognitionEngine.System);
 
         aiDataService = new AIDataService(getApplicationContext(), config);
+
+        submitQueryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final AIRequest aiRequest = new AIRequest();
+                aiRequest.setQuery(requestTextView.getText().toString());
+                requestTextView.setText(requestTextView.getText().toString());
+                new AsyncTask<AIRequest, Void, AIResponse>() {
+                    @Override
+                    protected AIResponse doInBackground(AIRequest... requests) {
+                        final AIRequest request = requests[0];
+                        try {
+                            final AIResponse response = aiDataService.request(aiRequest);
+                            return response;
+                        } catch (AIServiceException e) {
+                        }
+                        return null;
+                    }
+                    @Override
+                    protected void onPostExecute(AIResponse aiResponse) {
+                        if (aiResponse != null) {
+                            // process aiResponse here
+//                            resultTextView.setText(aiResponse.getResult().getFulfillment().getSpeech());
+                            System.out.println("response Intent: " + aiResponse.getResult().getMetadata().getIntentName());
+                            System.out.println("response Intent: " + aiResponse.getResult().getResolvedQuery());
+                            updateView(aiResponse);
+                            Text2Voice(aiResponse.getResult().getFulfillment().getSpeech());
+                        }
+                    }
+                }.execute(aiRequest);
+            }
+        });
 
         listenButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -107,6 +146,13 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+//        resultTextView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                mTts.stopSpeaking();
+//            }
+//        });
     }
 
     private void showTip(String str)
@@ -129,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
     // 合成- 文字转语音
     private void Text2Voice(String str) {
         // 1.创建SpeechSynthesizer对象, 第二个参数：本地合成时传InitListener
-        SpeechSynthesizer mTts = SpeechSynthesizer
+        mTts = SpeechSynthesizer
                 .createSynthesizer(this, null);
         // 2.合成参数设置，详见《科大讯飞MSC API手册(Android)》SpeechSynthesizer 类
         mTts.setParameter(SpeechConstant.VOICE_NAME, "Catherine");// 设置发音人
@@ -259,7 +305,7 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("request string: " + voiceResult);
                     final AIRequest aiRequest = new AIRequest();
                     aiRequest.setQuery(voiceResult);
-                    requestTextView.setText("request: "+voiceResult);
+                    requestTextView.setText(voiceResult);
                     new AsyncTask<AIRequest, Void, AIResponse>() {
                         @Override
                         protected AIResponse doInBackground(AIRequest... requests) {
@@ -275,9 +321,10 @@ public class MainActivity extends AppCompatActivity {
                         protected void onPostExecute(AIResponse aiResponse) {
                             if (aiResponse != null) {
                                 // process aiResponse here
-                                resultTextView.setText(aiResponse.getResult().getFulfillment().getSpeech());
+//                                resultTextView.setText(aiResponse.getResult().getFulfillment().getSpeech());
                                 System.out.println("response Intent: " + aiResponse.getResult().getMetadata().getIntentName());
                                 System.out.println("response Intent: " + aiResponse.getResult().getResolvedQuery());
+                                updateView(aiResponse);
                                 Text2Voice(aiResponse.getResult().getFulfillment().getSpeech());
                             }
                         }
@@ -317,5 +364,13 @@ public class MainActivity extends AppCompatActivity {
 //        mIat.setParameter(SpeechConstant.ACCENT, "mandarin");
     }
 
+    private boolean updateView(AIResponse response) {
+        chatArrayAdapter.add(new ChatMessage(side, requestTextView.getText().toString()));
+        side = !side;
+        chatArrayAdapter.add(new ChatMessage(side, response.getResult().getFulfillment().getSpeech()));
+        requestTextView.setText("");
+        side = !side;
+        return true;
+    }
 
 }

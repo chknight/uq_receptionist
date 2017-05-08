@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/libs/Msc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4499f115c3f2e52dff1d30aae5cfed9aafac3a63">
+        <dex dex="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/pre-dexed/debug/Msc_e67967215744c7b0268fcf9f4ab6db427811c0a3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c595dcfb9a03cd71d4d0c701e28663f7ff5f0d01/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/libs/Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4499f115c3f2e52dff1d30aae5cfed9aafac3a63">
+        <dex dex="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/2/Msc_e67967215744c7b0268fcf9f4ab6db427811c0a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7042f3368faa88b746db5d1657b6be36978f2386">
+        <dex dex="/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e6752344f76adda065fa4b6839c9119a10d94043/classes.dex" />
+    </item>
+
+</items>

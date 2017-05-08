@@ -95,10 +95,15 @@ def fetchDescriptionFromDatabase(parameter):
     result = fetchCourseInfoFromDataBase(parameter, 'description')
     return result
 
+# process ask for the description of a course
+def fetchCoordinatorFromDatabase(parameter):
+    result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
+    return result
 
 def fetchSchoolLocationFromDatabase(parameter):
     name = getValueFromParameter(parameter)
     result = fetchInfoFromDatabase('school', 'location', 'name', name)
+    return result
 
 
 def fetchSchoolEmailFromDatabase(parameter):
@@ -127,6 +132,12 @@ def process_request(intent_type, parameter, original_question):
     elif intent_type == 'CourseUnitIntent':
         return fetchUnitFromDatabase(parameter)
     elif intent_type == 'DefaultFallbackIntent':
+        return process_general_question(original_question)
+    elif intent_type == 'LocationIntent':
+        return fetchSchoolLocationFromDatabase(parameter)
+    elif intent_type == 'LecturerIntent':
+        return fetchCoordinatorFromDatabase(parameter)
+    elif intent_type == 'GeneralIntent':
         return process_general_question(original_question)
     else:
         return "Sorry, currently we do not have such service"

@@ -1,4 +1,4 @@
-import nltk
+from nltk.corpus import stopwords
 import tornado.ioloop
 import tornado.web
 import MySQLdb

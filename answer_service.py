@@ -38,31 +38,27 @@ def getKeywordFromText(text):
     for filtered in filtered_words:
         if filtered != "" and filtered not in inserted:
             inserted.append(filtered)
-    inserted.sort()
-    inserted = ','.join(inserted)
-    print(inserted)
     return inserted
 
-def compare_keyword(keyword):
+def compare_keyword(keywords):
     matched = []
     # finalList = []
     index = 0
-    keywords = keyword.split(',')
     for row in all_keywords:
         matched.append(0)
         for keyword in keywords:
             if keyword in row:
                 matched[index] += 1
+        matched[index] = float(matched[index]) / float(len(row))
         # finalList.append(matched[index])
         index += 1
 
     sorted_x = sorted(range(len(matched)), key=lambda k: matched[k], reverse=True)
-    print(sorted_x)
     print(matched[sorted_x[0]])
     index = sorted_x[0]
     print(index)
-    if matched[index] / keywords.count() >= 0.5:
-        return all_general_questions[index]
+    if matched[index] >= 0.5:
+        return all_general_questions[index]['answer']
     else:
         return "Sorry, we could not answer this question."
 

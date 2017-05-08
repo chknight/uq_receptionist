@@ -1,19 +1,42 @@
 # get the information from uq calender
 from pyquery import PyQuery as jquery
+import re
+import MySQLdb
+
+
+connection = MySQLdb.connect('localhost', 'root', '19941005', 'uq_receptionist')
+connection.set_character_set('utf8')
+connection.cursor().execute('SET NAMES utf8;')
+connection.cursor().execute('SET CHARACTER SET utf8;')
+connection.cursor().execute('SET character_set_connection=utf8;')
+
+
+# clean the tag in html
+def clean_text(raw_html):
+    cleaner = re.compile('<.*?>')
+    cleantext = re.sub(cleaner, '', raw_html)
+    cleantext = cleantext.replace('\n', ' ')
+    cleantext = re.sub(' +', ' ', cleantext)
+    return cleantext
 
 
 def retrieve_answer_page(answerPage):
     question = answerPage.find('.rn_DataValue').eq(0)
     answer = answerPage.find('.rn_DataValue').eq(1)
-    for content in question.contents():
-        print(content)
-    for child in answer.children():
-        if child.tag is 'p':
-            print('Node is a p')
-            print(child.text.replace('<!--stopindex-->', '').replace('<!--startindex-->', ''))
-        elif child.tag is 'blockquote':
-            print('Node is blockquote')
-            print(child.children())
+    question = clean_text(question.html())
+    answer = clean_text(answer.html())
+    # for child in answer.items():
+    print(question)
+    print(answer)
+    connection.cursor().execute('''INSERT into general_question (question, answer)
+            values (%s, %s)''', (question, answer))
+    connection.commit()
+        # if child.tag == 'p':
+        #     print('Node is a p')
+        #     print(child.text.replace('<!--stopindex-->', '').replace('<!--startindex-->', ''))
+        # elif child.tag == 'blockquote':
+        #     print('Node is blockquote')
+        #     print(child.children())
 
 
 

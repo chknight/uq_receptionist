@@ -30,6 +30,8 @@ def getKeywordFromText(text):
     text = text.replace(')', '')
     text = text.replace("what's", '')
     text = text.replace("'s", '')
+    text = text.replace('.', '')
+    text = text.replace('\n', '')
     words = text.split(" ")
     filtered_words = [word for word in words if word not in stopwords.words('english')]
     inserted = []
@@ -38,6 +40,7 @@ def getKeywordFromText(text):
             inserted.append(filtered)
     inserted.sort()
     inserted = ','.join(inserted)
+    print(inserted)
     return inserted
 
 
@@ -50,12 +53,9 @@ def getValueFromParameter(parameter):
 
 def fetchCourseInfoFromDataBase(parameter, field_name):
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
-    print(parameter)
     name = getValueFromParameter(parameter)
-    print(name)
     cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
-    print(result)
     if result is None:
         return 'No Such course in uq'
     return result[field_name]
@@ -74,6 +74,7 @@ def fetchAllDataFromDatabase(tablename):
 
 def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
+    print(filter_value)
     queryString = "SELECT * FROM %s WHERE %s='%s'" % (table_name, filter_name, filter_value)
     cursor.execute(queryString)
     result = cursor.fetchone()
@@ -127,6 +128,8 @@ def process_request(intent_type, parameter, original_question):
         return fetchUnitFromDatabase(parameter)
     elif intent_type == 'DefaultFallbackIntent':
         return process_general_question(original_question)
+    else:
+        return "Sorry, currently we do not have such service"
 
 
 class MainHandler(tornado.web.RequestHandler):
@@ -142,12 +145,15 @@ class MainHandler(tornado.web.RequestHandler):
     def post(self):
         self.set_header("Content-Type", "text/plain")
         data = json.loads(self.request.body.decode('ascii'))
+        print(data)
         result = data['result']
         parameter = result['parameters']
         intentType = result['metadata']['intentName']
         original_question = result['resolvedQuery']
 
         result = process_request(intentType, parameter, original_question)
+        if result is None:
+            result = 'Sorry, please say again'
         response = response_body
         response['speech'] = result
         response['displayText'] = result

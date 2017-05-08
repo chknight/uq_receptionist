@@ -43,6 +43,22 @@ def getKeywordFromText(text):
     print(inserted)
     return inserted
 
+def compare_keyword(keyword):
+    matched = []
+    # finalList = []
+    index = 1
+    keywords = keyword.split(',')
+    for key in all_general_questions:
+        matched[index] = 0
+        for keyword in keywords:
+            if keyword in key:
+                matched[index] +=  + 1
+        # finalList.append(matched[index])
+        index += 1
+
+    sorted_x = matched.sort(reverse=True)
+    print(sorted_x)
+
 
 # fetch the value from parameter json expression
 def getValueFromParameter(parameter):

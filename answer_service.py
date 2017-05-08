@@ -49,7 +49,8 @@ def compare_keyword(keywords):
         for keyword in keywords:
             if keyword in row:
                 matched[index] += 1
-        matched[index] = float(matched[index]) / float(len(row))
+        rate = float(matched[index]) / float(len(keywords))
+        matched[index] = rate
         # finalList.append(matched[index])
         index += 1
 

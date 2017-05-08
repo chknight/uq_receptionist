@@ -32,11 +32,13 @@ def getKeywordFromText(text):
     text = text.replace("'s", '')
     words = text.split(" ")
     filtered_words = [word for word in words if word not in stopwords.words('english')]
-    insert = ""
+    inserted = []
     for filtered in filtered_words:
-        if (filtered != ""):
-            insert = insert + filtered + ","
-    return insert
+        if filtered != "" and filtered not in inserted:
+            inserted.append(filtered)
+    inserted.sort()
+    inserted = ','.join(inserted)
+    return inserted
 
 
 # fetch the value from parameter json expression
@@ -56,16 +58,29 @@ def fetchCourseInfoFromDataBase(parameter, field_name):
     print(result)
     if result is None:
         return 'No Such course in uq'
-
     return result[field_name]
+
+
+# fetch all the data from database
+def fetchAllDataFromDatabase(tablename):
+    cursor = connection.cursor(MySQLdb.cursors.DictCursor)
+    queryString = "SELECT * FROM %s" % tablename
+    cursor.execute(queryString)
+    result = cursor.fetchall()
+    if result is None:
+        return None
+    return result
+
 
 def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
-    queryString = "SELECT * FROM %s WHERE %s=%s" % (table_name, filter_name, filter_value)
+    queryString = "SELECT * FROM %s WHERE %s='%s'" % (table_name, filter_name, filter_value)
     cursor.execute(queryString)
     result = cursor.fetchone()
     print(result)
-    return result[filter_name]
+    if result is None:
+        return None
+    return result[field_name]
 
 
 # process ask for the unit of a course
@@ -80,20 +95,39 @@ def fetchDescriptionFromDatabase(parameter):
     return result
 
 
+def fetchSchoolLocationFromDatabase(parameter):
+    name = getValueFromParameter(parameter)
+    result = fetchInfoFromDatabase('school', 'location', 'name', name)
+
+
+def fetchSchoolEmailFromDatabase(parameter):
+    name = getValueFromParameter(parameter)
+    result = fetchInfoFromDatabase('school', 'email', 'name', name)
+    return result
+
+
+def fetchSchoolPhoneFromDatabase(parameter):
+    name = getValueFromParameter(parameter)
+    result = fetchInfoFromDatabase('school', 'phone', 'name', name)
+    return result
+
+
 # process request ask for some general questions
 def process_general_question(original_question):
     keyword = getKeywordFromText(original_question)
-    result = fetchInfoFromDatabase('general_question', 'answer', 'question', keyword)
+    result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)
     return result
 
 
 # switch to the function according to
-def process_request(intentType, parameter, original_question):
-    return {
-        'CourseDescriptionIntent': fetchDescriptionFromDatabase(parameter),
-        'CourseUnitIntent': fetchUnitFromDatabase(parameter),
-        'DefaultFallbackIntent': process_general_question(original_question)
-    }.get(intentType)
+def process_request(intent_type, parameter, original_question):
+    if intent_type == 'CourseDescriptionIntent':
+        return fetchDescriptionFromDatabase(parameter)
+    elif intent_type == 'CourseUnitIntent':
+        return fetchUnitFromDatabase(parameter)
+    elif intent_type == 'DefaultFallbackIntent':
+        return process_general_question(original_question)
+
 
 class MainHandler(tornado.web.RequestHandler):
 
@@ -124,6 +158,8 @@ def make_app():
     return tornado.web.Application([
         (r"/", MainHandler),
     ])
+
+all_general_questions = fetchAllDataFromDatabase('general_question')
 
 if __name__ == "__main__":
     app = make_app()

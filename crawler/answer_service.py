@@ -12,10 +12,6 @@ def fetch_all_data():
     cursor = connection.cursor()
     cursor.execute('''SELECT * FROM COURSE''')
     results = cursor.fetchall()
-    print len(results)
-    for result in results:
-        print result[9]
-    return results
 
 allData = fetch_all_data()
 courseDictionary = {}

@@ -21,6 +21,7 @@ def clean_text(raw_html):
 
 
 def retrieve_school_page(school_page):
+    name = school_page.find('#page-head').find('h1').text()
     block = school_page.find('#content-primary').find('td').find('p')
     items = list(block.items())
     head = items[0].text().replace('Head of School: ', '').replace('Head: ', '')
@@ -43,8 +44,8 @@ def retrieve_school_page(school_page):
             fax = text.replace('Fax: ', '')
         elif 'Main Office: ' in text:
             office = text.replace('Main Office: ', '')
-    connection.cursor().execute('''INSERT into school (head, homepage, email, phone, fax, location)
-                values (%s, %s, %s, %s, %s, %s)''', (head, homepage, email, phone, fax, office))
+    connection.cursor().execute('''INSERT into school (head, homepage, email, phone, fax, location, name)
+                values (%s, %s, %s, %s, %s, %s, %s)''', (head, homepage, email, phone, fax, office, name))
     connection.commit()
 
 # retrieve the information in calender page

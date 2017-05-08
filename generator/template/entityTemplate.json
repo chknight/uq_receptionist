@@ -5,9 +5,9 @@
   "entries": [
     {% for entry in entries %}
       {
-        "value" : "{{entry}}",
+        "value" : "{{entry.key}}",
         "synonyms": [
-          "{{entry}}"
+          "{{entry.value}}"
         ]
       } {{ "," if not loop.last }}
     {% endfor %}

@@ -34,11 +34,12 @@ for row in data:
     text = text.replace("'s", '')
     words = text.split(" ")
     filtered_words = [word for word in words if word not in stopwords.words('english')]
-    insert = ""
+    insert = []
     for filtered in filtered_words:
-        if (filtered != ""):
-            insert = insert + filtered + ","
-    print(insert)
+        if filtered != "" and filtered not in insert:
+            insert.append(filtered)
+    insert.sort()
+    insert = ','.join(insert)
     cursor.execute("""
        UPDATE general_question
        SET keyword=%s

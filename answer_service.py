@@ -163,6 +163,12 @@ def process_general_question(original_question):
     return result
 
 
+def process_program_question(fieldName, parameter):
+    print(fieldName)
+    title = getValueFromParameter(parameter)
+    return fetchInfoFromDatabase('program_international', fieldName, 'title', title)
+
+
 # switch to the function according to
 def process_request(intent_type, parameter, original_question):
     if intent_type == 'CourseDescriptionIntent':
@@ -177,6 +183,8 @@ def process_request(intent_type, parameter, original_question):
         return fetchCoordinatorFromDatabase(parameter)
     elif intent_type == 'GeneralIntent':
         return process_general_question(original_question)
+    elif intent_type == 'EntryRequirementIntent':
+        return process_program_question('entry_requirements', parameter)
     else:
         return "Sorry, currently we do not have such service"
 

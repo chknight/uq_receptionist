@@ -16,7 +16,8 @@ connection.cursor().execute('SET NAMES utf8;')
 connection.cursor().execute('SET CHARACTER SET utf8;')
 connection.cursor().execute('SET character_set_connection=utf8;')
 
-driver = webdriver.Chrome(executable_path="/Users/chknight/Code/chromedriver")
+# driver = webdriver.Chrome(executable_path="/Users/chknight/Code/chromedriver")
+driver = webdriver.PhantomJS()
 driver.maximize_window()
 
 
@@ -103,10 +104,14 @@ def retrieve_program_page(url):
         courses = "The course list is still not available"
         if course_url is not None:
             courses = fetch_course(course_url)
-        courses = ','.join(courses)
+            courses = ','.join(courses)
+        entry_requirements = page.find('#entry-requirements')
+        entry_requirements = clean_text(entry_requirements.text().replace('Entry requirements ', ''))
 
-        connection.cursor().execute('''INSERT into program_domestic (title, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses)
-                        values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)''', (head, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses))
+        connection.cursor().execute('''INSERT into program_domestic (title, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses, entry_requirements)
+                                values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)''', (
+        head, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty,
+        courses, entry_requirements))
         connection.commit()
     except TimeoutException:
         print('No such program for international student')

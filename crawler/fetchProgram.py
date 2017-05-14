@@ -64,9 +64,9 @@ def retrieve_program_page(url):
         print(head.text)
         head = clean_text(head.text)
         print(head)
-        location = driver.find_element_by_xpath("//span[@data-sinet='LOCATION']").text
-        duration = driver.find_element_by_xpath("//div[@class='program__duration-value']").text
-        commencing = driver.find_element_by_xpath("//div[@class='program__commencement-value']").text
+        location = clean_text(driver.find_element_by_xpath("//span[@data-sinet='LOCATION']").text)
+        duration = clean_text(driver.find_element_by_xpath("//div[@class='program__duration-value']").text)
+        commencing = clean_text(driver.find_element_by_xpath("//div[@class='program__commencement-value']").text)
         print(location)
         print(duration)
         print(commencing)
@@ -74,6 +74,7 @@ def retrieve_program_page(url):
         # fee of the program
         driver.find_element_by_xpath("//a[text()='Fees and scholarships']").click()
         fee = page.find('span[data-sinet="StudentInfo > Domestic > IndicativeFee > CSP"]').text()
+        fee = clean_text(fee)
         print(fee)
 
 
@@ -82,17 +83,17 @@ def retrieve_program_page(url):
         majorsElements = page.find('h3[data-sinet="[Plan] TITLE"]')
         for majorsElement in majorsElements.items():
             print(majorsElement.text())
-            majors.append(majorsElement.text())
+            majors.append(clean_text(majorsElement.text()))
         majors = ','.join(majors)
 
 
 
 
         # summary of the program
-        program_code = page.find("ul[class='program__table'] div[data-sinet='CODE']").text()
-        program_unit = page.find("ul[class='program__table'] div[data-sinet='UNITS']").text()
-        program_level = page.find("ul[class='program__table'] div[data-sinet='LEVEL_VALUE']").text()
-        program_faculty = page.find("ul[class='program__table'] div[data-sinet='Faculty > FACULTY_KEY']").text()
+        program_code = clean_text(page.find("ul[class='program__table'] div[data-sinet='CODE']").text())
+        program_unit = clean_text(page.find("ul[class='program__table'] div[data-sinet='UNITS']").text())
+        program_level = clean_text(page.find("ul[class='program__table'] div[data-sinet='LEVEL_VALUE']").text())
+        program_faculty = clean_text(page.find("ul[class='program__table'] div[data-sinet='Faculty > FACULTY_KEY']").text())
         print(program_code)
         print(program_unit)
         print(program_level)
@@ -104,10 +105,14 @@ def retrieve_program_page(url):
         courses = "The course list is still not available"
         if course_url is not None:
             courses = fetch_course(course_url)
-        courses = ','.join(courses)
+            courses = ','.join(courses)
 
-        connection.cursor().execute('''INSERT into program_ (title, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses)
-                        values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)''', (head, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses))
+        entry_requirements = page.find('#entry-requirements')
+        entry_requirements = clean_text(entry_requirements.text().replace('Entry requirements ', ''))
+        print(entry_requirements)
+
+        connection.cursor().execute('''INSERT into program (title, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses, entry_requirements)
+                        values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)''', (head, location, duration, commencing, fee, majors, program_code, program_unit, program_level, program_faculty, courses, entry_requirements))
         connection.commit()
     except TimeoutException:
         print('No such program for international student')

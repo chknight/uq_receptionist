@@ -187,6 +187,10 @@ def process_request(intent_type, parameter, original_question):
         return process_program_question('entry_requirements', parameter)
     elif intent_type == 'ProgramCostIntent':
         return process_program_question('fee', parameter)
+    elif intent_type == 'ProgramDurationIntent':
+        return process_program_question('duration', parameter)
+    elif intent_type == 'ProgramCourseListIntent':
+        return process_program_question('courses', parameter)
     else:
         return "Sorry, currently we do not have such service"
 

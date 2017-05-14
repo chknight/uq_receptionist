@@ -49,9 +49,12 @@ def compare_keyword(keywords_from_user, keywords, dataset):
         for keyword in keywords_from_user:
             if keyword in row:
                 matched[index] += 1
-        rate1 = float(matched[index]) / float(len(keywords_from_user))
-        rate2 = float(matched[index]) / float(len(row))
-        matched[index] = rate1 + rate2
+        if matched[index] == 0:
+            matched[index] = 0
+        else:
+            rate1 = (float(matched[index]) + 0) / (float(len(keywords_from_user)) + 0)
+            rate2 = (float(matched[index]) + 0) / (float(len(row)) + 0 )
+            matched[index] = rate1 + rate2
         # finalList.append(matched[index])
         index += 1
 

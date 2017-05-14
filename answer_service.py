@@ -40,16 +40,16 @@ def getKeywordFromText(text):
             inserted.append(filtered)
     return inserted
 
-def compare_keyword(keywords):
+def compare_keyword(keywords_from_user, keywords, dataset):
     matched = []
     # finalList = []
     index = 0
-    for row in all_keywords:
+    for row in keywords:
         matched.append(0)
-        for keyword in keywords:
+        for keyword in keywords_from_user:
             if keyword in row:
                 matched[index] += 1
-        rate1 = float(matched[index]) / float(len(keywords))
+        rate1 = float(matched[index]) / float(len(keywords_from_user))
         rate2 = float(matched[index]) / float(len(row))
         matched[index] = rate1 + rate2
         # finalList.append(matched[index])
@@ -59,8 +59,8 @@ def compare_keyword(keywords):
     print(matched[sorted_x[0]])
     index = sorted_x[0]
     print(index)
-    if matched[index] >= 0.5:
-        return all_general_questions[index]['answer']
+    if matched[index] >= 1:
+        return dataset[index]['answer']
     else:
         return "Sorry, we could not answer this question."
 
@@ -96,6 +96,11 @@ def fetchAllDataFromDatabase(tablename):
 # if the fetch fail, learn from the user input
 def storeNewQuestionAndAnswer(question, answer):
     keyword = getKeywordFromText(question)
+    connection.cursor().execute('''INSERT into self_training_question (question, answer, keyword)
+                values (%s, %s, %s)''', [question, answer, ','.join(keyword)])
+    connection.commit()
+    all_keywords_in_self_train.append(keyword)
+    all_self_train_questions.append({'question': question, 'answer': answer})
 
 
 
@@ -151,7 +156,9 @@ def fetchSchoolPhoneFromDatabase(parameter):
 # process request ask for some general questions
 def process_general_question(original_question):
     keyword = getKeywordFromText(original_question)
-    result = compare_keyword(keyword)
+    result = compare_keyword(keyword, all_keywords_in_self_train, all_self_train_questions)
+    if result == 'Sorry, we could not answer this question.':
+        result = compare_keyword(keyword, all_keywords, all_general_questions)
     # result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)
     return result
 
@@ -215,17 +222,13 @@ class SelfTraingingHandler(tornado.web.RequestHandler):
         self.set_header("Content-Type", "text/plain")
         data = json.loads(self.request.body.decode('ascii'))
         print(data)
-        result = data['result']
-        parameter = result['parameters']
-        intentType = result['metadata']['intentName']
-        original_question = result['resolvedQuery']
+        question = data['question']
+        answer = data['answer']
 
-        result = process_request(intentType, parameter, original_question)
-        if result is None:
-            result = 'Sorry, please say again'
-        response = response_body
-        response['speech'] = result
-        response['displayText'] = result
+        storeNewQuestionAndAnswer(question, answer)
+        response = {
+            'result' : 'We already record your request.'
+        }
         self.write(response)
 
 
@@ -236,12 +239,20 @@ def make_app():
     ])
 
 def prepare_keyword():
+    temp = []
     for row in all_general_questions:
         keywords = row['keyword'].split(',')
         all_keywords.append(keywords)
+    for row in all_self_train_questions:
+        temp.append(row)
+        keywords = row['keyword'].split(',')
+        all_keywords_in_self_train.append(keywords)
+
 
 all_general_questions = fetchAllDataFromDatabase('general_question')
+all_self_train_questions = list(fetchAllDataFromDatabase('self_training_question'))
 all_keywords = []
+all_keywords_in_self_train = []
 prepare_keyword()
 
 

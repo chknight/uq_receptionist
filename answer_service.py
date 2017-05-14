@@ -105,6 +105,11 @@ def storeNewQuestionAndAnswer(question, answer):
     all_keywords_in_self_train.append(keyword)
     all_self_train_questions.append({'question': question, 'answer': answer})
 
+def storeUserIntoDatabase(device_id, nationality):
+    cursor = connection.cursor(MySQLdb.cursors.DictCursor)
+    cursor.execute('''INSERT into user (device_id, nationality)
+                values (%s, %s)''', [device_id, nationality])
+    connection.commit()
 
 
 def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
@@ -166,14 +171,21 @@ def process_general_question(original_question):
     return result
 
 
-def process_program_question(fieldName, parameter):
+def process_program_question(fieldName, parameter, context):
     print(fieldName)
-    title = getValueFromParameter(parameter)
-    return fetchInfoFromDatabase('program_international', fieldName, 'title', title)
-
+    device_id = context['parameters']['deviceId']
+    user_info = fetchInfoFromDatabase('user', 'nationality', 'device_id', device_id)
+    if user_info is None:
+        return "Are you an international student?"
+    if user_info == 1:
+        title = getValueFromParameter(parameter)
+        return fetchInfoFromDatabase('program_international', fieldName, 'title', title)
+    else:
+        title = getValueFromParameter(parameter)
+        return fetchInfoFromDatabase('program_domestic', fieldName, 'title', title)
 
 # switch to the function according to
-def process_request(intent_type, parameter, original_question):
+def process_request(intent_type, parameter, original_question, context):
     if intent_type == 'CourseDescriptionIntent':
         return fetchDescriptionFromDatabase(parameter)
     elif intent_type == 'CourseUnitIntent':
@@ -187,13 +199,13 @@ def process_request(intent_type, parameter, original_question):
     elif intent_type == 'GeneralIntent':
         return process_general_question(original_question)
     elif intent_type == 'EntryRequirementIntent':
-        return process_program_question('entry_requirements', parameter)
+        return process_program_question('entry_requirements', parameter, context)
     elif intent_type == 'ProgramCostIntent':
-        return process_program_question('fee', parameter)
+        return process_program_question('fee', parameter, context)
     elif intent_type == 'ProgramDurationIntent':
-        return process_program_question('duration', parameter)
+        return process_program_question('duration', parameter, context)
     elif intent_type == 'ProgramCourseListIntent':
-        return process_program_question('courses', parameter)
+        return process_program_question('courses', parameter, context)
     else:
         return "Sorry, currently we do not have such service"
 
@@ -213,10 +225,11 @@ class MainHandler(tornado.web.RequestHandler):
         print(data)
         result = data['result']
         parameter = result['parameters']
+        context = result['contexts'][0]
         intentType = result['metadata']['intentName']
         original_question = result['resolvedQuery']
 
-        result = process_request(intentType, parameter, original_question)
+        result = process_request(intentType, parameter, original_question, context)
         if result is None:
             result = 'Sorry, please say again'
         response = response_body
@@ -244,7 +257,33 @@ class SelfTraingingHandler(tornado.web.RequestHandler):
 
         storeNewQuestionAndAnswer(question, answer)
         response = {
-            'result' : 'We already record your request.'
+            'result': 'We already record your request.'
+        }
+        self.write(response)
+
+# handle self training
+class UserHandler(tornado.web.RequestHandler):
+    def set_default_headers(self):
+        self.set_header("Access-Control-Allow-Origin", "*")
+        self.set_header("Access-Control-Allow-Headers", "x-requested-with")
+        self.set_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
+
+    def get(self):
+        self.write("Hello, world")
+
+    def post(self):
+        self.set_header("Content-Type", "text/plain")
+        data = json.loads(self.request.body.decode('ascii'))
+        print(data)
+        device_id = data['deviceId']
+        nationality = data['nationality']
+        if nationality == '1':
+            nationality = 1
+        else:
+            nationality = 0
+        storeUserIntoDatabase(device_id, nationality)
+        response = {
+            'result': 'Store the user in database'
         }
         self.write(response)
 
@@ -252,7 +291,8 @@ class SelfTraingingHandler(tornado.web.RequestHandler):
 def make_app():
     return tornado.web.Application([
         (r"/", MainHandler),
-        (r"/selftraining", SelfTraingingHandler)
+        (r"/selftraining", SelfTraingingHandler),
+        (r"/nationality", UserHandler)
     ])
 
 def prepare_keyword():

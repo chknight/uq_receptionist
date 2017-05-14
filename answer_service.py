@@ -93,6 +93,11 @@ def fetchAllDataFromDatabase(tablename):
         return None
     return result
 
+# if the fetch fail, learn from the user input
+def storeNewQuestionAndAnswer(question, answer):
+    keyword = getKeywordFromText(question)
+
+
 
 def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
@@ -170,7 +175,34 @@ def process_request(intent_type, parameter, original_question):
 
 
 class MainHandler(tornado.web.RequestHandler):
+    def set_default_headers(self):
+        self.set_header("Access-Control-Allow-Origin", "*")
+        self.set_header("Access-Control-Allow-Headers", "x-requested-with")
+        self.set_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
 
+    def get(self):
+        self.write("Hello, world")
+
+    def post(self):
+        self.set_header("Content-Type", "text/plain")
+        data = json.loads(self.request.body.decode('ascii'))
+        print(data)
+        result = data['result']
+        parameter = result['parameters']
+        intentType = result['metadata']['intentName']
+        original_question = result['resolvedQuery']
+
+        result = process_request(intentType, parameter, original_question)
+        if result is None:
+            result = 'Sorry, please say again'
+        response = response_body
+        response['speech'] = result
+        response['displayText'] = result
+        self.write(response)
+
+
+# handle self training
+class SelfTraingingHandler(tornado.web.RequestHandler):
     def set_default_headers(self):
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header("Access-Control-Allow-Headers", "x-requested-with")
@@ -200,6 +232,7 @@ class MainHandler(tornado.web.RequestHandler):
 def make_app():
     return tornado.web.Application([
         (r"/", MainHandler),
+        (r"/selftraining", SelfTraingingHandler)
     ])
 
 def prepare_keyword():

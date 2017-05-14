@@ -188,6 +188,8 @@ def process_request(intent_type, parameter, original_question):
         return process_general_question(original_question)
     elif intent_type == 'EntryRequirementIntent':
         return process_program_question('entry_requirements', parameter)
+    elif intent_type == 'ProgramCostIntent':
+        return process_program_question('fee', parameter)
     else:
         return "Sorry, currently we do not have such service"
 

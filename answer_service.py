@@ -164,7 +164,7 @@ def fetchSchoolPhoneFromDatabase(parameter):
 # process request ask for some general questions
 def process_general_question(original_question):
     keyword = getKeywordFromText(original_question)
-    result = compare_keyword(keyword, all_keywords_in_self_train, all_self_train_questions)
+    result = fetchInfoFromDatabase('self_training_question', 'answer', 'question', original_question)
     if result == 'Sorry, we could not answer this question.':
         result = compare_keyword(keyword, all_keywords, all_general_questions)
     # result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)

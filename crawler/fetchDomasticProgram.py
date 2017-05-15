@@ -42,13 +42,18 @@ def clean_text(raw_html):
 
 def fetch_course(url):
     courselist_page = jquery(url=url)
-    courses = courselist_page.find('tr>td:first>a')
+    courses = courselist_page.find('tbody>tr>td:nth-child(3)')
     result = []
+    maxItem = 50
+    index = 0
     for course in courses.items():
+        index += 1
         print(course.text())
         if 'Alrady' not in course.text():
             result.append(course.text())
-    return result
+        if index >= maxItem:
+            return ','.join(result) + ". If you want know more courses, please visit UQ website to check detail."
+    return ','.join(result)
 
 
 def retrieve_program_page(url):
@@ -104,7 +109,6 @@ def retrieve_program_page(url):
         courses = "The course list is still not available"
         if course_url is not None:
             courses = fetch_course(course_url)
-            courses = ','.join(courses)
         entry_requirements = page.find('#entry-requirements')
         entry_requirements = clean_text(entry_requirements.text().replace('Entry requirements ', ''))
 

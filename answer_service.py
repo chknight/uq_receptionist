@@ -62,7 +62,7 @@ def compare_keyword(keywords_from_user, keywords, dataset):
     print(matched[sorted_x[0]])
     index = sorted_x[0]
     print(index)
-    if matched[index] >= 1:
+    if matched[index] >= 1.6:
         return dataset[index]['answer']
     else:
         return "Sorry, we could not answer this question."

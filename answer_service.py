@@ -81,7 +81,7 @@ def fetchCourseInfoFromDataBase(name, field_name):
     cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
     if result is None:
-        return 'No Such course in UQ'
+        return 'No such course in UQ'
     return result[field_name]
 
 

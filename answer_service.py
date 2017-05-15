@@ -83,7 +83,7 @@ def fetchCourseInfoFromDataBase(parameter, field_name):
     result = cursor.fetchone()
     if result is None:
         return 'No Such course in uq'
-    return result[field_name]
+    return name, result[field_name]
 
 
 # fetch all the data from database
@@ -126,19 +126,19 @@ def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
 
 # process ask for the unit of a course
 def fetchUnitFromDatabase(parameter):
-    result = fetchCourseInfoFromDataBase(parameter, 'unit')
-    return result
+    name, result = fetchCourseInfoFromDataBase(parameter, 'unit')
+    return name, result
 
 
 # process ask for the description of a course
 def fetchDescriptionFromDatabase(parameter):
-    result = fetchCourseInfoFromDataBase(parameter, 'description')
-    return result
+    name, result = fetchCourseInfoFromDataBase(parameter, 'description')
+    return name, result
 
 # process ask for the description of a course
 def fetchCoordinatorFromDatabase(parameter):
-    result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
-    return result
+    name, result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
+    return name, result
 
 
 def fetchSchoolLocationFromDatabase(parameter, original_question):
@@ -146,19 +146,19 @@ def fetchSchoolLocationFromDatabase(parameter, original_question):
     if name is None:
         return process_general_question(original_question)
     result = fetchInfoFromDatabase('school', 'location', 'name', name)
-    return result
+    return name, result
 
 
 def fetchSchoolEmailFromDatabase(parameter):
     name = getValueFromParameter(parameter)
     result = fetchInfoFromDatabase('school', 'email', 'name', name)
-    return result
+    return name, result
 
 
 def fetchSchoolPhoneFromDatabase(parameter):
     name = getValueFromParameter(parameter)
     result = fetchInfoFromDatabase('school', 'phone', 'name', name)
-    return result
+    return name, result
 
 
 # process request ask for some general questions
@@ -179,19 +179,20 @@ def process_program_question(fieldName, parameter, context):
         return "Are you an international student?"
     if user_info == 1:
         title = getValueFromParameter(parameter)
-        return fetchInfoFromDatabase('program_international', fieldName, 'title', title)
+        return title, fetchInfoFromDatabase('program_international', fieldName, 'title', title)
     else:
         title = getValueFromParameter(parameter)
-        return fetchInfoFromDatabase('program_domestic', fieldName, 'title', title)
+        return title, fetchInfoFromDatabase('program_domestic', fieldName, 'title', title)
 
 # switch to the function according to
 def process_request(intent_type, parameter, original_question, context):
     if intent_type == 'CourseDescriptionIntent':
-        return fetchDescriptionFromDatabase(parameter)
+        name, result = fetchDescriptionFromDatabase(parameter)
+        return result
     elif intent_type == 'CourseUnitIntent':
-        result = fetchUnitFromDatabase(parameter)
+        name, result = fetchUnitFromDatabase(parameter)
         if result != 'No Such course in uq':
-            result = 'The unit of ' + parameter + 'is' + result
+            result = 'The unit of ' + name + 'is' + result
         return result
     elif intent_type == 'DefaultFallbackIntent':
         result = process_general_question(original_question)
@@ -199,14 +200,14 @@ def process_request(intent_type, parameter, original_question, context):
             result = 'The answer of ' + original_question + 'is' + result
         return result
     elif intent_type == 'LocationIntent':
-        result = fetchSchoolLocationFromDatabase(parameter, original_question)
+        name, result = fetchSchoolLocationFromDatabase(parameter, original_question)
         if result is not None:
-            result = 'The location of ' + parameter + 'is' + result
+            result = 'The location of ' + name + 'is' + result
         return result
     elif intent_type == 'LecturerIntent':
-        result = fetchCoordinatorFromDatabase(parameter)
+        name, result = fetchCoordinatorFromDatabase(parameter)
         if result is not None:
-            result = 'The lecturer of ' + parameter + 'is' + result
+            result = 'The lecturer of ' + name + 'is' + result
         return result
     elif intent_type == 'GeneralIntent':
         result = process_general_question(original_question)
@@ -214,24 +215,24 @@ def process_request(intent_type, parameter, original_question, context):
             result = 'The answer of ' + original_question + 'is' + result
         return result
     elif intent_type == 'EntryRequirementIntent':
-        result = process_program_question('entry_requirements', parameter, context)
+        name, result = process_program_question('entry_requirements', parameter, context)
         if result is not None:
-            result = 'The entry requirements of ' + parameter + 'is' + result
+            result = 'The entry requirements of ' + name + 'is' + result
         return result
     elif intent_type == 'ProgramCostIntent':
-        result = process_program_question('fee', parameter, context)
+        name, result = process_program_question('fee', parameter, context)
         if result is not None:
-            result = 'The cost of ' + parameter + 'is' + result
+            result = 'The cost of ' + name + 'is' + result
         return result
     elif intent_type == 'ProgramDurationIntent':
-        result = process_program_question('duration', parameter, context)
+        name, result = process_program_question('duration', parameter, context)
         if result is not None:
-            result = 'The duration of ' + parameter + 'is' + result
+            result = 'The duration of ' + name + 'is' + result
         return result
     elif intent_type == 'ProgramCourseListIntent':
-        result = process_program_question('courses', parameter, context)
+        name, result = process_program_question('courses', parameter, context)
         if result is not None:
-            result = 'The course list of ' + parameter + 'is' + result
+            result = 'The course list of ' + name + 'is' + result
         return result
     else:
         return "Sorry, currently we do not have such service"

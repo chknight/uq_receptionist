@@ -65,7 +65,7 @@ def compare_keyword(keywords_from_user, keywords, dataset):
     if matched[index] >= 1.6:
         return dataset[index]['answer']
     else:
-        return "Sorry, we could not answer this question."
+        return None
 
 
 # fetch the value from parameter json expression
@@ -189,23 +189,50 @@ def process_request(intent_type, parameter, original_question, context):
     if intent_type == 'CourseDescriptionIntent':
         return fetchDescriptionFromDatabase(parameter)
     elif intent_type == 'CourseUnitIntent':
-        return fetchUnitFromDatabase(parameter)
+        result = fetchUnitFromDatabase(parameter)
+        if result != 'No Such course in uq':
+            result = 'The unit of ' + parameter + 'is' + result
+        return result
     elif intent_type == 'DefaultFallbackIntent':
-        return process_general_question(original_question)
+        result = process_general_question(original_question)
+        if result is not None:
+            result = 'The answer of ' + original_question + 'is' + result
+        return result
     elif intent_type == 'LocationIntent':
-        return fetchSchoolLocationFromDatabase(parameter, original_question)
+        result = fetchSchoolLocationFromDatabase(parameter, original_question)
+        if result is not None:
+            result = 'The location of ' + parameter + 'is' + result
+        return result
     elif intent_type == 'LecturerIntent':
-        return fetchCoordinatorFromDatabase(parameter)
+        result = fetchCoordinatorFromDatabase(parameter)
+        if result is not None:
+            result = 'The lecturer of ' + parameter + 'is' + result
+        return result
     elif intent_type == 'GeneralIntent':
-        return process_general_question(original_question)
+        result = process_general_question(original_question)
+        if result is not None:
+            result = 'The answer of ' + original_question + 'is' + result
+        return result
     elif intent_type == 'EntryRequirementIntent':
-        return process_program_question('entry_requirements', parameter, context)
+        result = process_program_question('entry_requirements', parameter, context)
+        if result is not None:
+            result = 'The entry requirements of ' + parameter + 'is' + result
+        return result
     elif intent_type == 'ProgramCostIntent':
-        return process_program_question('fee', parameter, context)
+        result = process_program_question('fee', parameter, context)
+        if result is not None:
+            result = 'The cost of ' + parameter + 'is' + result
+        return result
     elif intent_type == 'ProgramDurationIntent':
-        return process_program_question('duration', parameter, context)
+        result = process_program_question('duration', parameter, context)
+        if result is not None:
+            result = 'The duration of ' + parameter + 'is' + result
+        return result
     elif intent_type == 'ProgramCourseListIntent':
-        return process_program_question('courses', parameter, context)
+        result = process_program_question('courses', parameter, context)
+        if result is not None:
+            result = 'The course list of ' + parameter + 'is' + result
+        return result
     else:
         return "Sorry, currently we do not have such service"
 

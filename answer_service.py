@@ -177,7 +177,7 @@ def process_program_question(fieldName, parameter, context):
     device_id = context['parameters']['deviceId']
     user_info = fetchInfoFromDatabase('user', 'nationality', 'device_id', device_id)
     if user_info is None:
-        return "Are you an international student?"
+        return 'no device', "Are you an international student?"
     if user_info == 1:
         title = getValueFromParameter(parameter)
         return title, fetchInfoFromDatabase('program_international', fieldName, 'title', title)
@@ -213,22 +213,22 @@ def process_request(intent_type, parameter, original_question, context):
         return result
     elif intent_type == 'EntryRequirementIntent':
         name, result = process_program_question('entry_requirements', parameter, context)
-        if result is not None:
+        if result is not None and result != 'Are you an international student?':
             result = 'The entry requirements of ' + name + ' is: ' + result
         return result
     elif intent_type == 'ProgramCostIntent':
         name, result = process_program_question('fee', parameter, context)
-        if result is not None:
+        if result is not None and result != 'Are you an international student?':
             result = 'The cost of ' + name + ' is: ' + result
         return result
     elif intent_type == 'ProgramDurationIntent':
         name, result = process_program_question('duration', parameter, context)
-        if result is not None:
+        if result is not None and result != 'Are you an international student?':
             result = 'The duration of ' + name + ' is: ' + result
         return result
     elif intent_type == 'ProgramCourseListIntent':
         name, result = process_program_question('courses', parameter, context)
-        if result is not None:
+        if result is not None and result != 'Are you an international student?':
             result = 'The course list of ' + name + ' is: ' + result
         return result
     else:

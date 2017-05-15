@@ -168,6 +168,8 @@ def process_general_question(original_question):
     result = fetchInfoFromDatabase('self_training_question', 'answer', 'question', original_question)
     if result is None:
         result = compare_keyword(keyword, all_keywords, all_general_questions)
+    else:
+        result = "According to the user's knowledge: " + result
     # result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)
     return result
 

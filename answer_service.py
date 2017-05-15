@@ -73,7 +73,7 @@ def getValueFromParameter(parameter):
     for key in parameter.keys():
         if parameter[key].encode('ASCII') != "":
             print(parameter[key])
-            return parameter[key].upper()
+            return parameter[key]
     return None
 
 def fetchCourseInfoFromDataBase(parameter, field_name):
@@ -192,47 +192,47 @@ def process_request(intent_type, parameter, original_question, context):
     elif intent_type == 'CourseUnitIntent':
         name, result = fetchUnitFromDatabase(parameter)
         if result != 'No Such course in uq':
-            result = 'The unit of ' + name + 'is' + result
+            result = 'The unit of ' + name + 'is: ' + result
         return result
     elif intent_type == 'DefaultFallbackIntent':
         result = process_general_question(original_question)
         if result is not None:
-            result = 'The answer of ' + original_question + 'is' + result
+            result = 'The answer of ' + original_question + 'is: ' + result
         return result
     elif intent_type == 'LocationIntent':
         name, result = fetchSchoolLocationFromDatabase(parameter, original_question)
         if result is not None:
-            result = 'The location of ' + name + 'is' + result
+            result = 'The location of ' + name + 'is: ' + result
         return result
     elif intent_type == 'LecturerIntent':
         name, result = fetchCoordinatorFromDatabase(parameter)
         if result is not None:
-            result = 'The lecturer of ' + name + 'is' + result
+            result = 'The lecturer of ' + name + 'is: ' + result
         return result
     elif intent_type == 'GeneralIntent':
         result = process_general_question(original_question)
         if result is not None:
-            result = 'The answer of ' + original_question + 'is' + result
+            result = 'The answer of ' + original_question + 'is: ' + result
         return result
     elif intent_type == 'EntryRequirementIntent':
         name, result = process_program_question('entry_requirements', parameter, context)
         if result is not None:
-            result = 'The entry requirements of ' + name + 'is' + result
+            result = 'The entry requirements of ' + name + 'is: ' + result
         return result
     elif intent_type == 'ProgramCostIntent':
         name, result = process_program_question('fee', parameter, context)
         if result is not None:
-            result = 'The cost of ' + name + 'is' + result
+            result = 'The cost of ' + name + 'is: ' + result
         return result
     elif intent_type == 'ProgramDurationIntent':
         name, result = process_program_question('duration', parameter, context)
         if result is not None:
-            result = 'The duration of ' + name + 'is' + result
+            result = 'The duration of ' + name + 'is: ' + result
         return result
     elif intent_type == 'ProgramCourseListIntent':
         name, result = process_program_question('courses', parameter, context)
         if result is not None:
-            result = 'The course list of ' + name + 'is' + result
+            result = 'The course list of ' + name + 'is: ' + result
         return result
     else:
         return "Sorry, currently we do not have such service"

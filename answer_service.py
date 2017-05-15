@@ -219,7 +219,7 @@ def process_request(intent_type, parameter, original_question, context):
     elif intent_type == 'ProgramCostIntent':
         name, result = process_program_question('fee', parameter, context)
         if result is not None and result != 'Are you an international student?':
-            result = 'The cost of ' + name + ' is: ' + result
+            result = 'The cost of ' + name + ' is: ' + result + ' dollar per year'
         return result
     elif intent_type == 'ProgramDurationIntent':
         name, result = process_program_question('duration', parameter, context)

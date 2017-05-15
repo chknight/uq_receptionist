@@ -132,13 +132,13 @@ def fetchUnitFromDatabase(parameter):
 # process ask for the description of a course
 def fetchDescriptionFromDatabase(parameter):
     name = getValueFromParameter(parameter)
-    result = fetchCourseInfoFromDataBase(parameter, 'description')
+    result = fetchCourseInfoFromDataBase(name, 'description')
     return name, result
 
 # process ask for the description of a course
 def fetchCoordinatorFromDatabase(parameter):
     name = getValueFromParameter(parameter)
-    result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
+    result = fetchCourseInfoFromDataBase(name, 'coordinator')
     return name, result
 
 

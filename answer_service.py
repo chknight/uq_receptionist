@@ -165,7 +165,7 @@ def fetchSchoolPhoneFromDatabase(parameter):
 def process_general_question(original_question):
     keyword = getKeywordFromText(original_question)
     result = fetchInfoFromDatabase('self_training_question', 'answer', 'question', original_question)
-    if result == 'Sorry, we could not answer this question.':
+    if result is None:
         result = compare_keyword(keyword, all_keywords, all_general_questions)
     # result = fetchInfoFromDatabase('general_question', 'answer', 'keyword', keyword)
     return result
@@ -225,7 +225,10 @@ class MainHandler(tornado.web.RequestHandler):
         print(data)
         result = data['result']
         parameter = result['parameters']
-        context = result['contexts'][0]
+        if len(result['contexts']) > 0:
+            context = result['contexts'][0]
+        else:
+            context = ""
         intentType = result['metadata']['intentName']
         original_question = result['resolvedQuery']
 

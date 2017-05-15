@@ -234,7 +234,7 @@ class MainHandler(tornado.web.RequestHandler):
 
         result = process_request(intentType, parameter, original_question, context)
         if result is None:
-            result = 'Sorry, please say again'
+            result = 'Sorry, we could not answer this question.'
         response = response_body
         response['speech'] = result
         response['displayText'] = result

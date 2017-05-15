@@ -76,14 +76,13 @@ def getValueFromParameter(parameter):
             return parameter[key]
     return None
 
-def fetchCourseInfoFromDataBase(parameter, field_name):
+def fetchCourseInfoFromDataBase(name, field_name):
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
-    name = getValueFromParameter(parameter)
     cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
     if result is None:
         return 'No Such course in uq'
-    return name, result[field_name]
+    return result[field_name]
 
 
 # fetch all the data from database
@@ -125,25 +124,28 @@ def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
 
 # process ask for the unit of a course
 def fetchUnitFromDatabase(parameter):
-    name, result = fetchCourseInfoFromDataBase(parameter, 'unit')
-    return name, result
+    name = getValueFromParameter(parameter)
+    result = fetchCourseInfoFromDataBase(name, 'unit')
+    return result
 
 
 # process ask for the description of a course
 def fetchDescriptionFromDatabase(parameter):
-    name, result = fetchCourseInfoFromDataBase(parameter, 'description')
+    name = getValueFromParameter(parameter)
+    result = fetchCourseInfoFromDataBase(parameter, 'description')
     return name, result
 
 # process ask for the description of a course
 def fetchCoordinatorFromDatabase(parameter):
-    name, result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
+    name = getValueFromParameter(parameter)
+    result = fetchCourseInfoFromDataBase(parameter, 'coordinator')
     return name, result
 
 
 def fetchSchoolLocationFromDatabase(parameter, original_question):
     name = getValueFromParameter(parameter)
     if name is None:
-        return process_general_question(original_question)
+        return name, process_general_question(original_question)
     result = fetchInfoFromDatabase('school', 'location', 'name', name)
     return name, result
 
@@ -195,8 +197,6 @@ def process_request(intent_type, parameter, original_question, context):
         return result
     elif intent_type == 'DefaultFallbackIntent':
         result = process_general_question(original_question)
-        if result is not None:
-            result = 'The answer of ' + original_question + ' is: ' + result
         return result
     elif intent_type == 'LocationIntent':
         name, result = fetchSchoolLocationFromDatabase(parameter, original_question)
@@ -210,8 +210,6 @@ def process_request(intent_type, parameter, original_question, context):
         return result
     elif intent_type == 'GeneralIntent':
         result = process_general_question(original_question)
-        if result is not None:
-            result = 'The answer of ' + original_question + ' is: ' + result
         return result
     elif intent_type == 'EntryRequirementIntent':
         name, result = process_program_question('entry_requirements', parameter, context)

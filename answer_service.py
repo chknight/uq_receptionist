@@ -5,11 +5,13 @@ import MySQLdb
 import json
 
 
-connection = MySQLdb.connect('localhost', 'root', '19941005', 'uq_receptionist')
-connection.set_character_set('utf8')
-connection.cursor().execute('SET NAMES utf8;')
-connection.cursor().execute('SET CHARACTER SET utf8;')
-connection.cursor().execute('SET character_set_connection=utf8;')
+def connect_server():
+    connection = MySQLdb.connect('localhost', 'root', '19941005', 'uq_receptionist')
+    connection.set_character_set('utf8')
+    connection.cursor().execute('SET NAMES utf8;')
+    connection.cursor().execute('SET CHARACTER SET utf8;')
+    connection.cursor().execute('SET character_set_connection=utf8;')
+    return connection
 
 response_body = {
     "speech": "",
@@ -77,9 +79,11 @@ def getValueFromParameter(parameter):
     return None
 
 def fetchCourseInfoFromDataBase(name, field_name):
+    connection = connect_server()
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
     cursor.execute('''SELECT * FROM course WHERE name=%s''', [name])
     result = cursor.fetchone()
+    connection.close()
     if result is None:
         return 'No such course in UQ'
     return result[field_name]
@@ -87,36 +91,44 @@ def fetchCourseInfoFromDataBase(name, field_name):
 
 # fetch all the data from database
 def fetchAllDataFromDatabase(tablename):
+    connection = connect_server()
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
     queryString = "SELECT * FROM %s" % tablename
     cursor.execute(queryString)
     result = cursor.fetchall()
+    connection.close()
     if result is None:
         return None
     return result
 
 # if the fetch fail, learn from the user input
 def storeNewQuestionAndAnswer(question, answer):
+    connection = connect_server()
     keyword = getKeywordFromText(question)
     connection.cursor().execute('''INSERT into self_training_question (question, answer, keyword)
                 values (%s, %s, %s)''', [question, answer, ','.join(keyword)])
     connection.commit()
     all_keywords_in_self_train.append(keyword)
     all_self_train_questions.append({'question': question, 'answer': answer})
+    connection.close()
 
 def storeUserIntoDatabase(device_id, nationality):
+    connection = connect_server()
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
     cursor.execute('''INSERT into user (device_id, nationality)
                 values (%s, %s)''', [device_id, nationality])
     connection.commit()
+    connection.close()
 
 
 def fetchInfoFromDatabase(table_name, field_name, filter_name, filter_value):
+    connection = connect_server()
     cursor = connection.cursor(MySQLdb.cursors.DictCursor)
     print(filter_value)
     queryString = "SELECT * FROM %s WHERE %s='%s'" % (table_name, filter_name, filter_value)
     cursor.execute(queryString)
     result = cursor.fetchone()
+    connection.close()
     if result is None:
         return None
     return result[field_name]

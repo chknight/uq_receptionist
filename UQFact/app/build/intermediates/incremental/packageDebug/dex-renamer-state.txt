@@ -1,7 +1,4 @@
-#Tue May 09 04:19:35 AEST 2017
-base.0=/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c595dcfb9a03cd71d4d0c701e28663f7ff5f0d01
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e6752344f76adda065fa4b6839c9119a10d94043/classes.dex
-base.1=/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e6752344f76adda065fa4b6839c9119a10d94043
-file.0=/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c595dcfb9a03cd71d4d0c701e28663f7ff5f0d01/classes.dex
+#Mon May 22 16:42:28 AEST 2017
+base.0=/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

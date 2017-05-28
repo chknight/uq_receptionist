@@ -18,4 +18,5 @@
         android:paddingTop="5dp"
         android:text="Sample"
         android:textColor="#000" />
+
 </LinearLayout>

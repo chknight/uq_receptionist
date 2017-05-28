@@ -16,12 +16,12 @@
         "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
-        "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/abc_text_cursor_material.xml"
-    },
-    {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/abc_text_cursor_material.xml"
     },
     {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
@@ -116,12 +116,12 @@
         "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/notification_tile_bg.xml"
     },
     {
-        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
-        "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/textview.xml",
         "source": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/src/main/res/drawable/textview.xml"
+    },
+    {
+        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",

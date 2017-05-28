@@ -1,13 +1,24 @@
 package com.uq.seanshi.uqfact;
 
+import android.app.Activity;
 import android.app.ListActivity;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.PorterDuff;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,6 +33,7 @@ import ai.api.AIServiceException;
 import ai.api.android.AIConfiguration;
 import ai.api.android.AIDataService;
 import ai.api.android.AIService;
+import ai.api.model.AIContext;
 import ai.api.model.AIError;
 import ai.api.model.AIRequest;
 import ai.api.model.AIResponse;
@@ -42,10 +54,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,20 +71,54 @@ public class MainActivity extends AppCompatActivity {
 
     private Button listenButton;
     private Button submitQueryButton;
-    private TextView resultTextView;
     private EditText requestTextView;
     private ListView listView;
 
     private ChatArrayAdapter chatArrayAdapter;
 
-    private boolean side = false;
-
     private Toast mToast;
+
+    private boolean trainMode = false;
+    private boolean serverStatus = true;
+
+    private final String initHintMessage = "Hi, I am your UQ chatbot, you can ask me questions about UQ like: \n" +
+            "what program do you have? what is UQ? where is school of business? entry requirement of master of data science?\n" +
+            "For more information, please read through the user guide or send us feedback by clicking the button on the top right corner";
+    private String lastRequestQuery;
+    private String lastRequestQueryAnswer;
+    private String deviceId;
+
+    private List<AIContext> contexts;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case R.id.sendFeedback:
+                startActivity(new Intent(this, SendFeedbackActivity.class));
+                return true;
+            case R.id.userGuide:
+                startActivity(new Intent(this, UserGuideActivity.class));
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setSessionUsingDeviceID();
 
         //语音初始化，在使用应用使用时需要初始化一次就好，如果没有这句会出现10111初始化失败
         SpeechUtility.createUtility(MainActivity.this, "appid=56b0d819");
@@ -83,12 +130,15 @@ public class MainActivity extends AppCompatActivity {
 
         listenButton = (Button) findViewById(R.id.listenButton);
         submitQueryButton = (Button) findViewById(R.id.submit);
-//        resultTextView = (TextView) findViewById(R.id.resultTextView);
         requestTextView = (EditText) findViewById(R.id.requestTextView);
         listView = (ListView) findViewById(R.id.listView);
 
-        chatArrayAdapter = new ChatArrayAdapter(getApplicationContext(), R.layout.right, mTts);
+        chatArrayAdapter = new ChatArrayAdapter(this, R.layout.right, mTts);
         listView.setAdapter(chatArrayAdapter);
+
+        //init hint message
+        chatArrayAdapter.add(new ChatMessage(false, initHintMessage));
+        Text2Voice(initHintMessage);
 
         final AIConfiguration config = new AIConfiguration("fd151bd8a1674291a82c2baa037a1a5e",
                 AIConfiguration.SupportedLanguages.English,
@@ -96,35 +146,26 @@ public class MainActivity extends AppCompatActivity {
 
         aiDataService = new AIDataService(getApplicationContext(), config);
 
-        submitQueryButton.setOnClickListener(new View.OnClickListener() {
+        submitQueryButton.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                final AIRequest aiRequest = new AIRequest();
-                aiRequest.setQuery(requestTextView.getText().toString());
-                requestTextView.setText(requestTextView.getText().toString());
-                new AsyncTask<AIRequest, Void, AIResponse>() {
-                    @Override
-                    protected AIResponse doInBackground(AIRequest... requests) {
-                        final AIRequest request = requests[0];
-                        try {
-                            final AIResponse response = aiDataService.request(aiRequest);
-                            return response;
-                        } catch (AIServiceException e) {
+            public boolean onTouch(View view, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        view.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
+                        view.invalidate();
+                        String query = requestTextView.getText().toString();
+                        if (!query.equals("")) {
+                            sendRequestAndHandleResponse(query, false);
                         }
-                        return null;
+                        break;
                     }
-                    @Override
-                    protected void onPostExecute(AIResponse aiResponse) {
-                        if (aiResponse != null) {
-                            // process aiResponse here
-//                            resultTextView.setText(aiResponse.getResult().getFulfillment().getSpeech());
-                            System.out.println("response Intent: " + aiResponse.getResult().getMetadata().getIntentName());
-                            System.out.println("response Intent: " + aiResponse.getResult().getResolvedQuery());
-                            updateView(aiResponse);
-                            Text2Voice(aiResponse.getResult().getFulfillment().getSpeech());
-                        }
+                    case MotionEvent.ACTION_UP: {
+                        view.getBackground().clearColorFilter();
+                        view.invalidate();
+                        break;
                     }
-                }.execute(aiRequest);
+                }
+                return true;
             }
         });
 
@@ -134,11 +175,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     Log.d("Pressed", "Button pressed");
+                    listenButton.setText("Keep Speaking, I'm listening");
                     setENParam();
                     int ret = mIat.startListening(mRecognizerListener);
                     System.out.println("start listening:" + ret);
                 } else if (event.getAction() == MotionEvent.ACTION_UP) {
-
+                    listenButton.setText("CLICK TO SPEAK");
                     Log.d("Released", "Button released");
                     mIat.stopListening();
                 }
@@ -147,16 +189,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        resultTextView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                mTts.stopSpeaking();
-//            }
-//        });
+        checkServerStatus();
+
     }
 
-    private void showTip(String str)
-    {
+    private void showTip(String str) {
         mToast.setText(str);
         mToast.show();
     }
@@ -186,41 +223,6 @@ public class MainActivity extends AppCompatActivity {
         // 3.开始合成
         mTts.startSpeaking(str, new MySynListener());
     }
-
-    // 合成监听器
-    private class MySynListener implements SynthesizerListener {
-        // 会话结束回调接口，没有错误时，error为null
-        public void onCompleted(SpeechError error) {
-        }
-
-        // 缓冲进度回调
-        // percent为缓冲进度0~100，beginPos为缓冲音频在文本中开始位置，endPos表示缓冲音频在文本中结束位置，info为附加信息。
-        public void onBufferProgress(int percent, int beginPos, int endPos,
-                                     String info) {
-        }
-
-        // 开始播放
-        public void onSpeakBegin() {
-        }
-
-        // 暂停播放
-        public void onSpeakPaused() {
-        }
-
-        // 播放进度回调
-        // percent为播放进度0~100,beginPos为播放音频在文本中开始位置，endPos表示播放音频在文本中结束位置.
-        public void onSpeakProgress(int percent, int beginPos, int endPos) {
-        }
-
-        // 恢复播放回调接口
-        public void onSpeakResumed() {
-        }
-
-        // 会话事件回调接口
-        public void onEvent(int arg0, int arg1, int arg2, Bundle arg3) {
-        }
-
-    };
 
     /**
      * 听写监听器。
@@ -285,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     JSONObject result = new JSONObject(results.getResultString());
                     JSONArray jsonArray = result.getJSONArray("ws");
-                    for(int i=0;i<jsonArray.length();i++){
+                    for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject object = jsonArray.getJSONObject(i);
                         JSONArray array = object.getJSONArray("cw");
                         for (int j = 0; j < array.length(); j++) {
@@ -297,38 +299,12 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     voiceResult += ans;
-//                    try {
-//                        ans = URLEncoder.encode(voiceResult, "utf-8"); //先对中文进行UTF-8编码
-//                    } catch (UnsupportedEncodingException e) {
-//                        e.printStackTrace();
-//                    }
                     System.out.println("request string: " + voiceResult);
-                    final AIRequest aiRequest = new AIRequest();
-                    aiRequest.setQuery(voiceResult);
                     requestTextView.setText(voiceResult);
-                    new AsyncTask<AIRequest, Void, AIResponse>() {
-                        @Override
-                        protected AIResponse doInBackground(AIRequest... requests) {
-                            final AIRequest request = requests[0];
-                            try {
-                                final AIResponse response = aiDataService.request(aiRequest);
-                                return response;
-                            } catch (AIServiceException e) {
-                            }
-                            return null;
-                        }
-                        @Override
-                        protected void onPostExecute(AIResponse aiResponse) {
-                            if (aiResponse != null) {
-                                // process aiResponse here
-//                                resultTextView.setText(aiResponse.getResult().getFulfillment().getSpeech());
-                                System.out.println("response Intent: " + aiResponse.getResult().getMetadata().getIntentName());
-                                System.out.println("response Intent: " + aiResponse.getResult().getResolvedQuery());
-                                updateView(aiResponse);
-                                Text2Voice(aiResponse.getResult().getFulfillment().getSpeech());
-                            }
-                        }
-                    }.execute(aiRequest);
+
+//                    if (!trainMode) {
+//                        sendRequestAndHandleResponse(voiceResult, false);
+//                    }
                     voiceResult = "";
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -364,13 +340,200 @@ public class MainActivity extends AppCompatActivity {
 //        mIat.setParameter(SpeechConstant.ACCENT, "mandarin");
     }
 
-    private boolean updateView(AIResponse response) {
-        chatArrayAdapter.add(new ChatMessage(side, requestTextView.getText().toString()));
-        side = !side;
-        chatArrayAdapter.add(new ChatMessage(side, response.getResult().getFulfillment().getSpeech()));
+    private boolean updateView(String response) {
+        chatArrayAdapter.add(new ChatMessage(false, response));
         requestTextView.setText("");
-        side = !side;
         return true;
+    }
+
+    private boolean checkServerStatus() {
+        GetAsyncTask asyncT = new GetAsyncTask();
+        try {
+            ConnectivityManager conMgr = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+            if (conMgr.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.DISCONNECTED
+                    && conMgr.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.DISCONNECTED) {
+                mToast = Toast.makeText(this, "Please check your internet connection", Toast.LENGTH_LONG);
+                mToast.show();
+                serverStatus = false;
+                return false;
+            }
+            String response = asyncT.execute().get();
+            if (!response.equals("Success")) {
+                mToast = Toast.makeText(this, "Server is now under maintenance, please use the app later", Toast.LENGTH_LONG);
+                mToast.show();
+                serverStatus = false;
+                return false;
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
+
+    private void startSelfTrain(AIResponse response) {
+        String newResponse = response.getResult().getFulfillment().getSpeech() + "Would you be able to tell me the correct answer?";
+        chatArrayAdapter.add(new ChatMessage(false, true, newResponse));
+        Text2Voice(newResponse);
+        requestTextView.setText("");
+    }
+
+    private void startAskNationality(AIResponse response) {
+        String newResponse = response.getResult().getFulfillment().getSpeech();
+        chatArrayAdapter.add(new ChatMessage(false, true, true, newResponse));
+        Text2Voice(newResponse);
+        requestTextView.setText("");
+    }
+
+    private boolean sendPost(Map<String, String> map) {
+        PostAsyncTask asyncT = new PostAsyncTask(map);
+        try {
+            String response = asyncT.execute().get();
+            if (response.equals("Success")) {
+                return true;
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    private void setSessionUsingDeviceID() {
+        TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        deviceId = telephonyManager.getDeviceId();
+        contexts = new ArrayList<>();
+        AIContext deviceContext = new AIContext("deviceContext");
+        Map<String, String> map = new HashMap<>();
+        map.put("deviceId", deviceId);
+        deviceContext.setParameters(map);
+        contexts.add(deviceContext);
+        System.out.println(deviceId);
+    }
+
+    private void sendRequestAndHandleResponse(String query, Boolean isHidenRequest) {
+        if (!serverStatus) {
+            mToast = Toast.makeText(this, "Check your internet connection or server is under maintenance, please try later", Toast.LENGTH_LONG);
+            mToast.show();
+            return;
+        }
+        final AIRequest aiRequest = new AIRequest();
+        if (!isHidenRequest) {
+            chatArrayAdapter.add(new ChatMessage(true, query));
+        }
+
+        if (trainMode) {
+            lastRequestQueryAnswer = query;
+            //send to server and store
+            System.out.print("stored last query:" + lastRequestQuery);
+            System.out.print("stored last answer:" + lastRequestQueryAnswer);
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("url", "selftraining");
+            map.put("question", lastRequestQuery);
+            map.put("answer", lastRequestQueryAnswer);
+            sendPost(map);
+            trainMode = false;
+            requestTextView.setText("");
+            String speech = "Thank you very much, your reply is now stored in the database";
+            chatArrayAdapter.add(new ChatMessage(false, speech));
+            Text2Voice(speech);
+            return;
+        }
+
+        aiRequest.setQuery(query);
+        aiRequest.setContexts(contexts);
+        lastRequestQuery = query;
+//        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+        new AsyncTask<AIRequest, Void, AIResponse>() {
+            ProgressDialog progDailog;
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                progDailog = new ProgressDialog(MainActivity.this);
+                progDailog.setMessage("Fetching Answer...");
+                progDailog.setIndeterminate(false);
+                progDailog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progDailog.setCancelable(true);
+                progDailog.show();
+            }
+            @Override
+            protected AIResponse doInBackground(AIRequest... requests) {
+                final AIRequest request = requests[0];
+                try {
+                    final AIResponse response = aiDataService.request(aiRequest);
+                    return response;
+                } catch (AIServiceException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(AIResponse aiResponse) {
+                progDailog.dismiss();
+                if (aiResponse != null) {
+                    // process aiResponse here
+                    System.out.println("response Intent: " + aiResponse.getResult().getMetadata().getIntentName());
+                    System.out.println("response Intent: " + aiResponse.getResult().getResolvedQuery());
+                    //self train
+                    if (aiResponse.getResult().getFulfillment().getSpeech().contains("Sorry, we could not answer this question.")) {
+                        startSelfTrain(aiResponse);
+                        return;
+                    }
+                    //ask for nationality
+                    if (aiResponse.getResult().getFulfillment().getSpeech().contains("Are you an international student?")) {
+                        startAskNationality(aiResponse);
+                        return;
+                    }
+                    String voiceResponse = aiResponse.getResult().getFulfillment().getSpeech();
+                    updateView(voiceResponse);
+                    Text2Voice(voiceResponse);
+                }
+            }
+        }.execute(aiRequest);
+    }
+
+    //self train
+    public void YesSelfTrain() {
+        String bad = "Great, I'm ready to learn";
+        chatArrayAdapter.add(new ChatMessage(false, bad));
+        Text2Voice(bad);
+        requestTextView.setText("");
+        trainMode = true;
+    }
+
+    public void NotSelfTrain() {
+        String bad = "That's alright, you can still try some other questions";
+        chatArrayAdapter.add(new ChatMessage(false, bad));
+        Text2Voice(bad);
+        requestTextView.setText("");
+    }
+
+    //ask nationality
+    public void InternationalStudent() {
+        Map<String, String> map = new HashMap<>();
+        map.put("url", "nationality");
+        map.put("nationality", "1");
+        map.put("deviceId", deviceId);
+        Boolean isFinished = sendPost(map);
+        if (isFinished) {
+            chatArrayAdapter.add(new ChatMessage(false, "Thank you, I am now fetching the answer of your previous question"));
+            sendRequestAndHandleResponse(lastRequestQuery, true);
+        }
+    }
+
+    public void DomesticStudent() {
+        Map<String, String> map = new HashMap<>();
+        map.put("url", "nationality");
+        map.put("nationality", "0");
+        map.put("deviceId", deviceId);
+        Boolean isFinished = sendPost(map);
+        if (isFinished) {
+            chatArrayAdapter.add(new ChatMessage(false, "Thank you, I am now fetching the answer of your previous question"));
+            sendRequestAndHandleResponse(lastRequestQuery, true);
+        }
     }
 
 }

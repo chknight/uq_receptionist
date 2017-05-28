@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.uq.seanshi.uqfact"
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -37,12 +37,16 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     // api.ai SDK dependencies
+    // some another dependencies...
+    compile files('libs/Msc.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/mail.jar')
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.google.code.gson:gson:2.3'
     compile 'commons-io:commons-io:2.4'
-    testCompile 'junit:junit:4.12'
-    // some another dependencies...
     compile 'ai.api:libai:1.4.8'
     compile 'ai.api:sdk:2.0.5@aar'
-    compile files('libs/Msc.jar')
+    compile 'com.android.support.constraint:constraint-layout:+'
+    testCompile 'junit:junit:4.12'
 }

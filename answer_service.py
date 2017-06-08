@@ -1,4 +1,5 @@
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 import tornado.ioloop
 import tornado.web
 import MySQLdb
@@ -20,6 +21,8 @@ response_body = {
     "contextOut": [],
     "source": "me"
 }
+# for stemmer
+wnl = WordNetLemmatizer()
 
 
 # get the keyword according to the original questions
@@ -49,6 +52,8 @@ def compare_keyword(keywords_from_user, keywords, dataset):
     for row in keywords:
         matched.append(0)
         for keyword in keywords_from_user:
+            # stemming the wordpytho
+            keyword = wnl.lemmatize(keyword)
             if keyword in row:
                 matched[index] += 1
         if matched[index] == 0:
@@ -342,7 +347,12 @@ def prepare_keyword():
     temp = []
     for row in all_general_questions:
         keywords = row['keyword'].split(',')
-        all_keywords.append(keywords)
+        processed_keywords = []
+        for keyword in keywords:
+            keyword = wnl.lemmatize(keyword)
+            print(keyword)
+            processed_keywords.append(keyword)
+        all_keywords.append(processed_keywords)
     for row in all_self_train_questions:
         temp.append(row)
         keywords = row['keyword'].split(',')

@@ -96,6 +96,10 @@
         "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/right_train.xml",
+        "source": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/src/main/res/layout/right_train.xml"
+    },
+    {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
         "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
@@ -140,6 +144,10 @@
         "source": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/src/main/res/layout/right.xml"
     },
     {
+        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/activity_user_guide.xml",
+        "source": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/src/main/res/layout/activity_user_guide.xml"
+    },
+    {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/seanshi/.android/build-cache/28d96ab2187f501c2ebd49ea082364de15896b99/output/res/layout/abc_list_menu_item_layout.xml"
     },
@@ -166,6 +174,10 @@
     {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/aidialog.xml",
         "source": "/Users/seanshi/.android/build-cache/a7bf45880c61a438dff22b357223bcf7a9048286/output/res/layout/aidialog.xml"
+    },
+    {
+        "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/activity_feedback.xml",
+        "source": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/src/main/res/layout/activity_feedback.xml"
     },
     {
         "merged": "/Users/seanshi/Documents/UQ/Thesis/uq_receptionist/UQFact/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",

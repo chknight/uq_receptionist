@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="25" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
@@ -28,6 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.uq.seanshi.uqfact.SendFeedbackActivity" />
+        <activity android:name="com.uq.seanshi.uqfact.UserGuideActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

@@ -13,10 +13,12 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechSynthesizer;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
 
@@ -46,13 +48,39 @@ class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        ChatMessage chatMessageObj = getItem(position);
+        final ChatMessage chatMessageObj = getItem(position);
         View row = convertView;
         LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (chatMessageObj.left) {
-            row = inflater.inflate(R.layout.right, parent, false);
-        }else{
             row = inflater.inflate(R.layout.left, parent, false);
+        }else{
+            if (chatMessageObj.wantTrain) {
+                row = inflater.inflate(R.layout.right_train, parent, false);
+                TextView notTrain = (TextView) row.findViewById(R.id.notTrain);
+                TextView train = (TextView) row.findViewById(R.id.train);
+                notTrain.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (chatMessageObj.wantNationality) {
+                            ((MainActivity) context).DomesticStudent();
+                        } else {
+                            ((MainActivity) context).NotSelfTrain();
+                        }
+                    }
+                });
+                train.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (chatMessageObj.wantNationality) {
+                            ((MainActivity) context).InternationalStudent();
+                        } else {
+                            ((MainActivity) context).YesSelfTrain();
+                        }
+                    }
+                });
+            } else {
+                row = inflater.inflate(R.layout.right, parent, false);
+            }
         }
         chatText = (TextView) row.findViewById(R.id.msgr);
         chatText.setText(chatMessageObj.message);
@@ -64,4 +92,5 @@ class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
         });
         return row;
     }
+
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f90a444c-6290-41f8-a29d-a08b7f0e0200" name="Default" comment="remove p`">
+    <list default="true" id="f90a444c-6290-41f8-a29d-a08b7f0e0200" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="thesis.iws" />
@@ -571,27 +571,6 @@
       <option name="presentableId" value="Default" />
       <updated>1488249949535</updated>
     </task>
-    <task id="LOCAL-00009" summary="add new crawler and make the generator work">
-      <created>1494130027352</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1494130027352</updated>
-    </task>
-    <task id="LOCAL-00010" summary="finish new crawler">
-      <created>1494162318262</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1494162318262</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update database">
-      <created>1494162330952</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1494162330952</updated>
-    </task>
     <task id="LOCAL-00012" summary="update databaseadd new crawler">
       <created>1494230442549</created>
       <option name="number" value="00012" />
@@ -914,7 +893,28 @@
       <option name="project" value="LOCAL" />
       <updated>1495102110763</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="add the api.ai exported files">
+      <created>1497330404373</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1497330404376</updated>
+    </task>
+    <task id="LOCAL-00059" summary="remove useless sql files">
+      <created>1497330504004</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1497330504004</updated>
+    </task>
+    <task id="LOCAL-00060" summary="change the place">
+      <created>1497330564673</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1497330564673</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1000,9 +1000,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge branch 'master' of github.com:chknight/uq_receptionist&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
-    <MESSAGE value="add code in crawler to fetch entry requirement&#10;" />
-    <MESSAGE value="add function for self training" />
     <MESSAGE value="make the program query work" />
     <MESSAGE value="change table name" />
     <MESSAGE value="add query for the fee" />
@@ -1025,7 +1022,10 @@
     <MESSAGE value="update database" />
     <MESSAGE value="update crawler" />
     <MESSAGE value="fix bug caused by timeout of mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug caused by timeout of mysql" />
+    <MESSAGE value="add the api.ai exported files" />
+    <MESSAGE value="remove useless sql files" />
+    <MESSAGE value="change the place" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the place" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">

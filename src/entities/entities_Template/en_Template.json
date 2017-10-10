@@ -1,0 +1,17 @@
+{
+  "id": "{{entity_id}}",
+  "name": "{{entity_name}}",
+  "isOverridable": true,
+  "entries": [
+    {% for entity in entities %}
+      {
+        "value" : "{{entity.key}}",
+        "synonyms": [
+          "{{entity.value}}"
+        ]
+      } {{ "," if not loop.last }}
+    {% endfor %}
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

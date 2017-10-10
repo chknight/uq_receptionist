@@ -1,0 +1,2607 @@
+{
+  "id": "domestic_fee",
+  "name": "domestic_fee",
+  "isOverridable": true,
+  "entries": [
+    
+      {
+        "value" : "Bachelor of Advanced Finance and Economics Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Advanced Humanities Honours",
+        "synonyms": [
+          "6,909"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Advanced Science Honours",
+        "synonyms": [
+          "9,273"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Agribusiness",
+        "synonyms": [
+          "10,238"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Equine Science",
+        "synonyms": [
+          "9,600"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Sustainable Agriculture",
+        "synonyms": [
+          "9,639"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Veterinary Technology",
+        "synonyms": [
+          "10,174"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Wildlife Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Agricultural Science Honours",
+        "synonyms": [
+          "9,486"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Architectural Design",
+        "synonyms": [
+          "9,347"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Arts",
+        "synonyms": [
+          "7,031"
+        ]
+      } ,
+    
+      {
+        "value" : "Diploma in Arts",
+        "synonyms": [
+          "6,795"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Arts Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/Education Secondary",
+        "synonyms": [
+          "6,765"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/International Hotel and Tourism Management",
+        "synonyms": [
+          "9,015"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/Laws Honours",
+        "synonyms": [
+          "9,443"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/Social Science",
+        "synonyms": [
+          "6,761"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Biomedical Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Biomedical Science/Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Biotechnology Honours",
+        "synonyms": [
+          "9,464"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Business Management",
+        "synonyms": [
+          "10,858"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Business Management Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management /Education Secondary",
+        "synonyms": [
+          "9,884"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Arts",
+        "synonyms": [
+          "9,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Commerce",
+        "synonyms": [
+          "10,941"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Communication",
+        "synonyms": [
+          "9,401"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Economics",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Information Technology",
+        "synonyms": [
+          "10,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/International Hotel and Tourism Management",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Journalism",
+        "synonyms": [
+          "8,816"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Laws Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Science",
+        "synonyms": [
+          "10,088"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Clinical Exercise Physiology Honours",
+        "synonyms": [
+          "8,654"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Commerce",
+        "synonyms": [
+          "10,760"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Commerce Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce /Information Technology",
+        "synonyms": [
+          "10,186"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Arts",
+        "synonyms": [
+          "9,340"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Economics",
+        "synonyms": [
+          "10,927"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Laws Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Science",
+        "synonyms": [
+          "10,072"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Communication",
+        "synonyms": [
+          "7,031"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Communication Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Communication/ Journalism",
+        "synonyms": [
+          "6,655"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Communication/Arts",
+        "synonyms": [
+          "6,796"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Criminology and Criminal Justice Honours",
+        "synonyms": [
+          "7,658"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Dental Science Honours",
+        "synonyms": [
+          "10,247"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Economics",
+        "synonyms": [
+          "10,826"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Economics Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Economics/Arts",
+        "synonyms": [
+          "9,407"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Economics/Laws Honours",
+        "synonyms": [
+          "10,913"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Economics/Science",
+        "synonyms": [
+          "10,059"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Education Primary",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Education Primary Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Engineering Honours",
+        "synonyms": [
+          "9,371"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Engineering Honours and Master of Engineering",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Arts",
+        "synonyms": [
+          "8,915"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Biotechnology Honours",
+        "synonyms": [
+          "9,325"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Business Management",
+        "synonyms": [
+          "9,796"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Commerce",
+        "synonyms": [
+          "9,760"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Economics",
+        "synonyms": [
+          "9,746"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Information Technology",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Mathematics",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Science",
+        "synonyms": [
+          "9,346"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Environmental Management Honours",
+        "synonyms": [
+          "9,008"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Environmental Science Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Equine Science",
+        "synonyms": [
+          "9,486"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Equine Science Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Exercise and Nutrition Sciences",
+        "synonyms": [
+          "9,181"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Exercise and Nutrition Sciences Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Exercise and Sport Sciences Honours",
+        "synonyms": [
+          "8,652"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Health Sciences",
+        "synonyms": [
+          "9,014"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Health Sciences Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Health, Sport and Physical Education Honours",
+        "synonyms": [
+          "8,553"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Information Technology",
+        "synonyms": [
+          "9,429"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Information Technology Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Information Technology/Arts",
+        "synonyms": [
+          "8,010"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Information Technology/Science",
+        "synonyms": [
+          "9,258"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Hotel and Tourism Management",
+        "synonyms": [
+          "10,819"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Hotel and Tourism Management Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Studies",
+        "synonyms": [
+          "6,701"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Studies Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Journalism",
+        "synonyms": [
+          "6,775"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Journalism Honours",
+        "synonyms": [
+          "6,909"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Journalism/Arts",
+        "synonyms": [
+          "6,609"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Journalism/Laws Honours",
+        "synonyms": [
+          "8,756"
+        ]
+      } ,
+    
+      {
+        "value" : "Diploma in Languages",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Laws Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Mathematics",
+        "synonyms": [
+          "9,257"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Mathematics Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Arts",
+        "synonyms": [
+          "7,919"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Business Management",
+        "synonyms": [
+          "10,551"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Commerce",
+        "synonyms": [
+          "10,209"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Economics",
+        "synonyms": [
+          "10,152"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Education Secondary",
+        "synonyms": [
+          "8,464"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Information Technology",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Science",
+        "synonyms": [
+          "9,317"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Midwifery",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Midwifery Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Music Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Music Honours/Arts",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Music Honours/Education Secondary",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Music Honours/Science",
+        "synonyms": [
+          "7,244"
+        ]
+      } ,
+    
+      {
+        "value" : "Diploma in Music Performance",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Nursing",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Nursing Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Nursing/ Midwifery",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Occupational Health and Safety Science Honours",
+        "synonyms": [
+          "9,058"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Occupational Therapy Honours",
+        "synonyms": [
+          "9,004"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Oral Health Honours",
+        "synonyms": [
+          "10,751"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Pharmacy Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Physiotherapy Honours",
+        "synonyms": [
+          "9,028"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Politics, Philosophy and Economics Honours",
+        "synonyms": [
+          "7,109"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Psychological Science Honours",
+        "synonyms": [
+          "6,832"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Regional and Town Planning",
+        "synonyms": [
+          "8,991"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Regional and Town Planning Honours",
+        "synonyms": [
+          "9,203"
+        ]
+      } ,
+    
+      {
+        "value" : "Diploma in Science",
+        "synonyms": [
+          "8,886"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science",
+        "synonyms": [
+          "8,996"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science Gatton",
+        "synonyms": [
+          "9,675"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science Honours",
+        "synonyms": [
+          "8,929"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science Honours - Gatton",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Arts",
+        "synonyms": [
+          "7,992"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Education Secondary",
+        "synonyms": [
+          "8,434"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Journalism",
+        "synonyms": [
+          "7,849"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Laws Honours",
+        "synonyms": [
+          "10,164"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Social Science",
+        "synonyms": [
+          "7,037"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Social Science Honours",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Social Work Honours",
+        "synonyms": [
+          "6,909"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Speech Pathology Honours",
+        "synonyms": [
+          "8,166"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Sustainable Agriculture",
+        "synonyms": [
+          "9,429"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Sustainable Agriculture Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Veterinary Science Honours",
+        "synonyms": [
+          "10,551"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Veterinary Technology",
+        "synonyms": [
+          "9,887"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Veterinary Technology Honours",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Wildlife Science",
+        "synonyms": [
+          "9,429"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Wildlife Science Honours",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Advanced Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Advanced Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Advanced Nursing",
+        "synonyms": [
+          "18,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agribusiness",
+        "synonyms": [
+          "28,640"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Agribusiness",
+        "synonyms": [
+          "14,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agribusiness",
+        "synonyms": [
+          "28,640"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Agricultural Science",
+        "synonyms": [
+          "14,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agricultural Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agricultural Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Alcohol, Tobacco and Other Drug Studies",
+        "synonyms": [
+          "9,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Animal Science",
+        "synonyms": [
+          "31,420"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Animal Science",
+        "synonyms": [
+          "24,940"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Animal Science",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Econometrics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Econometrics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Linguistics",
+        "synonyms": [
+          "18,500"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Linguistics",
+        "synonyms": [
+          "18,500"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Applied Linguistics",
+        "synonyms": [
+          "18,500"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Applied Linguistics",
+        "synonyms": [
+          "9,380"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Linguistics",
+        "synonyms": [
+          "18,420"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Architecture",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "11,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Arts in Japanese Interpreting",
+        "synonyms": [
+          "10,620"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Arts in Japanese Interpreting and Translation",
+        "synonyms": [
+          "21,740"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Arts in Japanese Interpreting and Translation",
+        "synonyms": [
+          "21,740"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Arts in Japanese Translation",
+        "synonyms": [
+          "11,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Atrocity Prevention",
+        "synonyms": [
+          "10,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Audiology Studies",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics",
+        "synonyms": [
+          "25,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics",
+        "synonyms": [
+          "25,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Bioinformatics",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics Research Extensive",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics Research Extensive",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Biostatistics",
+        "synonyms": [
+          "24,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Biostatistics",
+        "synonyms": [
+          "12,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biostatistics",
+        "synonyms": [
+          "24,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biostatistics",
+        "synonyms": [
+          "24,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Biotechnology",
+        "synonyms": [
+          "26,600"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Biotechnology",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology Research Extensive",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology Research Extensive",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business",
+        "synonyms": [
+          "29,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Business",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Business Administration",
+        "synonyms": [
+          "22,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business Administration",
+        "synonyms": [
+          "44,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Business Administration",
+        "synonyms": [
+          "44,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business Psychology",
+        "synonyms": [
+          "25,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Business Research Methods",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Business Research Methods",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Clinical Dentistry",
+        "synonyms": [
+          "56,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Clinical Exercise Physiology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Clinical Pharmacy",
+        "synonyms": [
+          "4,676"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Clinical Pharmacy",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Clinical Pharmacy",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Clinical Psychology",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Commerce",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Commerce",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Commerce",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Communication",
+        "synonyms": [
+          "25,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Communication",
+        "synonyms": [
+          "12,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Communication",
+        "synonyms": [
+          "25,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Community Development",
+        "synonyms": [
+          "10,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Computer Science",
+        "synonyms": [
+          "24,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Computer Science",
+        "synonyms": [
+          "24,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Computer Science",
+        "synonyms": [
+          "24,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Computer Science",
+        "synonyms": [
+          "12,060"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Computer Science Management",
+        "synonyms": [
+          "25,780"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Conservation Biology",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Conservation Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Counselling",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Critical Care Echocardiography",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Data Science",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Practice",
+        "synonyms": [
+          "21,260"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Development Practice",
+        "synonyms": [
+          "10,400"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Practice",
+        "synonyms": [
+          "10,400"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Dietetics Studies",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Digital Health",
+        "synonyms": [
+          "9,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Economic Studies",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Economics",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics and Public Policy",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics and Public Policy",
+        "synonyms": [
+          "28,600"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Educational Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Educational Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Educational Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Educational Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Educational Studies",
+        "synonyms": [
+          "10,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering Science",
+        "synonyms": [
+          "25,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering Science",
+        "synonyms": [
+          "25,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Engineering Science",
+        "synonyms": [
+          "12,940"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering Science Management",
+        "synonyms": [
+          "28,420"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Environmental Management",
+        "synonyms": [
+          "25,570"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Environmental Management",
+        "synonyms": [
+          "25,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Environmental Management",
+        "synonyms": [
+          "26,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Environmental Management",
+        "synonyms": [
+          "12,900"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Epidemiology",
+        "synonyms": [
+          "9,600"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Epidemiology",
+        "synonyms": [
+          "19,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Epidemiology",
+        "synonyms": [
+          "19,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Executive Leadership",
+        "synonyms": [
+          "22,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Financial Mathematics",
+        "synonyms": [
+          "28,640"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Financial Mathematics",
+        "synonyms": [
+          "28,640"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Fire Safety",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Food Science and Technology",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Food Science and Technology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Food Science and Technology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Geographic Information Science",
+        "synonyms": [
+          "23,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Geographic Information Science",
+        "synonyms": [
+          "23,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Geographic Information Science",
+        "synonyms": [
+          "11,350"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Geographic Information Science",
+        "synonyms": [
+          "25,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Global Management",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Governance and Public Policy",
+        "synonyms": [
+          "21,720"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Governance and Public Policy",
+        "synonyms": [
+          "10,860"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Governance and Public Policy",
+        "synonyms": [
+          "24,480"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Governance and Public Policy",
+        "synonyms": [
+          "24,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Governance and Public Policy",
+        "synonyms": [
+          "21,720"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Health Economics",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Health Economics",
+        "synonyms": [
+          "29,840"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Heritage Management",
+        "synonyms": [
+          "11,540"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Heritage Management",
+        "synonyms": [
+          "23,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Heritage Management",
+        "synonyms": [
+          "23,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Information Technology",
+        "synonyms": [
+          "12,010"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Information Technology",
+        "synonyms": [
+          "24,020"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Information Technology",
+        "synonyms": [
+          "24,020"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Information Technology Management",
+        "synonyms": [
+          "26,580"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Integrated Water Management",
+        "synonyms": [
+          "36,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Integrated Water Management",
+        "synonyms": [
+          "36,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Integrated Water Management",
+        "synonyms": [
+          "18,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Interaction Design",
+        "synonyms": [
+          "22,870"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Interaction Design",
+        "synonyms": [
+          "11,550"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Interaction Design",
+        "synonyms": [
+          "23,100"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Commercial Law",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Economics and Finance",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Economics and Finance",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Law",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in International Relations",
+        "synonyms": [
+          "11,550"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Relations",
+        "synonyms": [
+          "23,100"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Relations",
+        "synonyms": [
+          "23,100"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Relations",
+        "synonyms": [
+          "23,100"
+        ]
+      } ,
+    
+      {
+        "value" : "Masters of International Relations/International Law",
+        "synonyms": [
+          "27,230"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Laws",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Laws",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Leadership in Global Development",
+        "synonyms": [
+          "25,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Magnetic Resonance Technology",
+        "synonyms": [
+          "11,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Magnetic Resonance Technology",
+        "synonyms": [
+          "22,550"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Magnetic Resonance Technology",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Magnetic Resonance and Positron Emission Tomography",
+        "synonyms": [
+          "12,040"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Mediation and Conflict Resolution",
+        "synonyms": [
+          "10,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Medicine",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Medicine",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Medicine",
+        "synonyms": [
+          "10,951"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Mental Health",
+        "synonyms": [
+          "9,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Mental Health",
+        "synonyms": [
+          "18,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Mental Health Nursing",
+        "synonyms": [
+          "18,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Mineral Resources",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Mineral Resources",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Mineral Resources",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Molecular Biology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Molecular Biology",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology Research Extensive",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology Research Extensive",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Museum Studies",
+        "synonyms": [
+          "18,760"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Museum Studies",
+        "synonyms": [
+          "9,380"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Museum Studies",
+        "synonyms": [
+          "18,760"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Music",
+        "synonyms": [
+          "18,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Music",
+        "synonyms": [
+          "9,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Music",
+        "synonyms": [
+          "18,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Music",
+        "synonyms": [
+          "18,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Nursing",
+        "synonyms": [
+          "9,120"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Nursing Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Occupational Health and Safety Science",
+        "synonyms": [
+          "23,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Occupational Health and Safety Science #32",
+        "synonyms": [
+          "6,910"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Occupational Therapy Studies",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Organisational Psychology",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Peace and Conflict Studies",
+        "synonyms": [
+          "20,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Peace and Conflict Studies",
+        "synonyms": [
+          "10,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Peace and Conflict Studies",
+        "synonyms": [
+          "20,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Peace and Conflict Studies",
+        "synonyms": [
+          "20,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Petroleum Engineering",
+        "synonyms": [
+          "38,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Pharmacy Practice",
+        "synonyms": [
+          "4,676"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Physiotherapy",
+        "synonyms": [
+          "9,353"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Physiotherapy Studies",
+        "synonyms": [
+          "22,240"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Psychological Practice",
+        "synonyms": [
+          "23,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Psychology",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Psychology",
+        "synonyms": [
+          "6,349"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Public Health",
+        "synonyms": [
+          "19,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Public Health",
+        "synonyms": [
+          "19,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Public Health",
+        "synonyms": [
+          "9,600"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Public Transport",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Research Commercialisation",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Responsible Resource Development",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Responsible Resource Development",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Responsible Resource Development",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Science",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Science",
+        "synonyms": [
+          "25,920"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Science",
+        "synonyms": [
+          "24,620"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Social Work Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Social Work Studies",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Speech Pathology Studies",
+        "synonyms": [
+          "23,300"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sports Coaching",
+        "synonyms": [
+          "19,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Sports Coaching",
+        "synonyms": [
+          "10,100"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sports Coaching",
+        "synonyms": [
+          "19,200"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sports Medicine",
+        "synonyms": [
+          "25,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Sports Medicine",
+        "synonyms": [
+          "12,960"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Sustainable Energy",
+        "synonyms": [
+          "36,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Sustainable Energy",
+        "synonyms": [
+          "18,160"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sustainable Energy",
+        "synonyms": [
+          "36,320"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Teaching Primary",
+        "synonyms": [
+          "6,561"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Tourism Leadership",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Tourism, Hotel and Event Management",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Tourism, Hotel and Event Management",
+        "synonyms": [
+          "15,680"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Tourism, Hotel and Event Management",
+        "synonyms": [
+          "31,360"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Urban and Regional Planning",
+        "synonyms": [
+          "12,500"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Urban and Regional Planning",
+        "synonyms": [
+          "22,700"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Urban and Regional Planning",
+        "synonyms": [
+          "22,700"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Veterinary Science",
+        "synonyms": [
+          "38,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Veterinary Science",
+        "synonyms": [
+          "19,040"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Veterinary Science",
+        "synonyms": [
+          "38,080"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Writing, Editing and Publishing",
+        "synonyms": [
+          "18,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Writing, Editing and Publishing",
+        "synonyms": [
+          "18,880"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Writing, Editing and Publishing",
+        "synonyms": [
+          "9,760"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Biotechnology",
+        "synonyms": [
+          "35,520"
+        ]
+      } 
+    
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

@@ -1,0 +1,2551 @@
+{
+  "id": "international_location",
+  "name": "international_location",
+  "isOverridable": true,
+  "entries": [
+    
+      {
+        "value" : "Bachelor of Advanced Finance and Economics Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Advanced Humanities Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Advanced Science Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Agribusiness",
+        "synonyms": [
+          "Gatton, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Equine Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Sustainable Agriculture",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Veterinary Technology",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Agribusiness/Wildlife Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Agricultural Science Honours",
+        "synonyms": [
+          "Gatton, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Architectural Design",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Arts Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/Education Secondary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/International Hotel and Tourism Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Arts/Social Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Biomedical Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Biomedical Science/Science",
+        "synonyms": [
+          "Herston, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Biotechnology Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Business Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Business Management Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management /Education Secondary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Communication",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/International Hotel and Tourism Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Journalism",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Business Management/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Clinical Exercise Physiology Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Commerce Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce /Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Commerce/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Communication",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Communication Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Communication/ Journalism",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Communication/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Criminology and Criminal Justice Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Dental Science Honours",
+        "synonyms": [
+          "Herston, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Economics Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Economics/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Economics/Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Economics/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Education Primary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Education Primary Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Education Secondary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Engineering Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Engineering Honours and Master of Engineering",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Biotechnology Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Business Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Mathematics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Engineering Honours/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Environmental Management Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Environmental Science Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Equine Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Equine Science Honours",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Exercise and Nutrition Sciences",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Exercise and Nutrition Sciences Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Exercise and Sport Sciences Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Health Sciences",
+        "synonyms": [
+          "Herston, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Health Sciences Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Health, Sport and Physical Education Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Information Technology Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Information Technology/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Information Technology/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Hotel and Tourism Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Hotel and Tourism Management Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of International Studies Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Journalism",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Journalism Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Journalism/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Journalism/Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Diploma in Languages",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Mathematics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Mathematics Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Business Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Education Secondary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Mathematics/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Midwifery",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Midwifery Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Music Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Music Honours/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Music Honours/Education Secondary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Music Honours/Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Diploma in Music Performance",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Nursing",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Nursing Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Nursing/ Midwifery",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Occupational Health and Safety Science Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Occupational Therapy Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Oral Health Honours",
+        "synonyms": [
+          "Herston, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Pharmacy Honours",
+        "synonyms": [
+          "Pharmacy Aust Cntr Excellence, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Physiotherapy Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Politics, Philosophy and Economics Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Psychological Science Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Regional and Town Planning",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Regional and Town Planning Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science",
+        "synonyms": [
+          "Herston, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science Gatton",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Science Honours - Gatton",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Arts",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Education Secondary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Journalism",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelors of Science/Laws Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Social Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Social Science Honours",
+        "synonyms": [
+          "Ipswich, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Social Work Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Speech Pathology Honours",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Sustainable Agriculture",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Sustainable Agriculture Honours",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Veterinary Science Honours",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Veterinary Technology",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Veterinary Technology Honours",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Wildlife Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Bachelor of Wildlife Science Honours",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Advanced Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Advanced Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Advanced Nursing",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agribusiness",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Agribusiness",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agribusiness",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Agricultural Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agricultural Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Agricultural Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Alcohol, Tobacco and Other Drug Studies",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Animal Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Animal Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Animal Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Econometrics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Econometrics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Linguistics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Linguistics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Applied Linguistics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Applied Linguistics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Applied Linguistics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Architecture",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Arts in Chinese Translation and Interpreting",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Arts in Japanese Interpreting and Translation",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Arts in Japanese Interpreting and Translation",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Atrocity Prevention",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Audiology Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Bioinformatics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics Research Extensive",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Bioinformatics Research Extensive",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Biostatistics",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Biostatistics",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biostatistics",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biostatistics",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Biotechnology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Biotechnology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology Research Extensive",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Biotechnology Research Extensive",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Business",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Business Administration",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business Administration",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Business Administration",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Business Psychology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Business Research Methods",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Business Research Methods",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Clinical Dentistry",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Clinical Exercise Physiology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Clinical Pharmacy",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Clinical Pharmacy",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Clinical Pharmacy",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Clinical Psychology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Commerce",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Communication",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Communication",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Communication",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Computer Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Computer Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Computer Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Computer Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Computer Science Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Conservation Biology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Conservation Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Counselling",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Data Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Practice",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Development Practice",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Development Practice",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Dietetics Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Digital Health",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Economic Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Economics and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Educational Studies",
+        "synonyms": [
+          "External , St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Educational Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Educational Studies",
+        "synonyms": [
+          "External , St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Educational Studies",
+        "synonyms": [
+          "External , St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Educational Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Engineering Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Engineering Science Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Environmental Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Environmental Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Environmental Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Environmental Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Epidemiology",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Epidemiology",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Epidemiology",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Financial Mathematics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Financial Mathematics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Food Science and Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Food Science and Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Food Science and Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Geographic Information Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Geographic Information Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Geographic Information Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Geographic Information Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Global Management",
+        "synonyms": [
+          "External , St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Governance and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Governance and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Governance and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Governance and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Governance and Public Policy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Health Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Health Economics",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Heritage Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Heritage Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Information Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Information Technology Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Integrated Water Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Integrated Water Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Integrated Water Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Interaction Design",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Interaction Design",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Interaction Design",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Commercial Law",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Economics and Finance",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Economics and Finance",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Law",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in International Relations",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Relations",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Relations",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of International Relations",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Masters of International Relations/International Law",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Laws",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Laws",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Leadership in Global Development",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Magnetic Resonance Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Magnetic Resonance Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Magnetic Resonance Technology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Magnetic Resonance and Positron Emission Tomography",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Mediation and Conflict Resolution",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Medicine MD-Ochsner",
+        "synonyms": [
+          "Teaching Hospitals, Ipswich, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Medicine",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Medicine",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Medicine",
+        "synonyms": [
+          "Herston, Teaching Hospitals, Ipswich, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Mental Health",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Mental Health Nursing",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Mineral Resources",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Mineral Resources",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Mineral Resources",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Molecular Biology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Molecular Biology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology Research Extensive",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Molecular Biology Research Extensive",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Museum Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Museum Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Music",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Music",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Music",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Music",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Nursing",
+        "synonyms": [
+          "External , St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Nursing Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Occupational Health and Safety Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Occupational Health and Safety Science #32",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Occupational Therapy Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Organisational Psychology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Peace and Conflict Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Peace and Conflict Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Peace and Conflict Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Peace and Conflict Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Petroleum Engineering",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Pharmacy Practice",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Physiotherapy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Physiotherapy Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Psychology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Psychology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Public Health",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Public Health",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Public Health",
+        "synonyms": [
+          "Herston"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Research Commercialisation",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Responsible Resource Development",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Responsible Resource Development",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Responsible Resource Development",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Science",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Social Work Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Social Work Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Speech Pathology Studies",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sports Coaching",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Sports Coaching",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sports Coaching",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sports Medicine",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Sports Medicine",
+        "synonyms": [
+          "External"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Sustainable Energy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Sustainable Energy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Sustainable Energy",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Teaching Primary",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Tourism Leadership",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Tourism, Hotel and Event Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Tourism, Hotel and Event Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Tourism, Hotel and Event Management",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Urban and Regional Planning",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Urban and Regional Planning",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Urban and Regional Planning",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Diploma in Veterinary Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Veterinary Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Veterinary Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Writing, Editing and Publishing",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Writing, Editing and Publishing",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Graduate Certificate in Writing, Editing and Publishing",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Biotechnology",
+        "synonyms": [
+          "St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Philosophy",
+        "synonyms": [
+          "Gatton, Herston, Ipswich, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Master of Philosophy",
+        "synonyms": [
+          "Gatton, Herston, Ipswich, St Lucia"
+        ]
+      } ,
+    
+      {
+        "value" : "Doctor of Veterinary Clinical Science",
+        "synonyms": [
+          "Gatton"
+        ]
+      } 
+    
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

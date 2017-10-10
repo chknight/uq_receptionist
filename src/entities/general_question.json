@@ -1,0 +1,3153 @@
+{
+  "id": "general_question",
+  "name": "general_question",
+  "isOverridable": true,
+  "entries": [
+    
+      {
+        "value" : " In what month do semesters at UQ start? ",
+        "synonyms": [
+          " In what month do semesters at UQ start? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a course? ",
+        "synonyms": [
+          " What is a course? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are electives? ",
+        "synonyms": [
+          " What are electives? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the scanned document requirements? ",
+        "synonyms": [
+          " What are the scanned document requirements? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I calculate my GPA grade point average? ",
+        "synonyms": [
+          " How can I calculate my GPA grade point average? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for a UQ scholarship? ",
+        "synonyms": [
+          " How do I apply for a UQ scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I know what credit I might be eligible for? ",
+        "synonyms": [
+          " How do I know what credit I might be eligible for? "
+        ]
+      } ,
+    
+      {
+        "value" : " What does \",dual program\", or \",dual degree\", mean? ",
+        "synonyms": [
+          " What does \",dual program\", or \",dual degree\", mean? "
+        ]
+      } ,
+    
+      {
+        "value" : " For how many years of study can I receive HECS-HELP? ",
+        "synonyms": [
+          " For how many years of study can I receive HECS-HELP? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I live as a UQ Student? ",
+        "synonyms": [
+          " Where can I live as a UQ Student? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am studying at another university. How do I transfer studies to UQ? ",
+        "synonyms": [
+          " I am studying at another university. How do I transfer studies to UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I find information on UQ courses and programs? ",
+        "synonyms": [
+          " Where can I find information on UQ courses and programs? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I find an agent who can help me with my application? ",
+        "synonyms": [
+          " How do I find an agent who can help me with my application? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a prerequisite? ",
+        "synonyms": [
+          " What is a prerequisite? "
+        ]
+      } ,
+    
+      {
+        "value" : " What courses does UQ offer over summer December to February in Australia? ",
+        "synonyms": [
+          " What courses does UQ offer over summer December to February in Australia? "
+        ]
+      } ,
+    
+      {
+        "value" : " Exchange Student Partner Codes ",
+        "synonyms": [
+          " Exchange Student Partner Codes "
+        ]
+      } ,
+    
+      {
+        "value" : " I do not meet the entry requirements what are my options? ",
+        "synonyms": [
+          " I do not meet the entry requirements what are my options? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is Communication for Social Change? ",
+        "synonyms": [
+          " What is Communication for Social Change? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I improve my entry rank? ",
+        "synonyms": [
+          " How can I improve my entry rank? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a \",major\", or \",extended major\",? ",
+        "synonyms": [
+          " What is a \",major\", or \",extended major\",? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are prerequisites? ",
+        "synonyms": [
+          " What are prerequisites? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need to have a supervisor before submitting my research higher degree application? ",
+        "synonyms": [
+          " Do I need to have a supervisor before submitting my research higher degree application? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a package offer? ",
+        "synonyms": [
+          " What is a package offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " Am I an international or domestic applicant? ",
+        "synonyms": [
+          " Am I an international or domestic applicant? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student. How long will it take to process my application? ",
+        "synonyms": [
+          " I am an international student. How long will it take to process my application? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study externally distance education? ",
+        "synonyms": [
+          " Can I study externally distance education? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student. Do I need to apply to UQ via an agent? ",
+        "synonyms": [
+          " I am an international student. Do I need to apply to UQ via an agent? "
+        ]
+      } ,
+    
+      {
+        "value" : " If I do not currently meet English language proficiency requirements, can I still apply to UQ? ",
+        "synonyms": [
+          " If I do not currently meet English language proficiency requirements, can I still apply to UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I change courses? ",
+        "synonyms": [
+          " How do I change courses? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a semester? ",
+        "synonyms": [
+          " What is a semester? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the different levels of overseas student health cover? ",
+        "synonyms": [
+          " What are the different levels of overseas student health cover? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student can I get credit for previous studies? ",
+        "synonyms": [
+          " I am an international student can I get credit for previous studies? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am a mature-aged student wanting to study at UQ any advice? ",
+        "synonyms": [
+          " I am a mature-aged student wanting to study at UQ any advice? "
+        ]
+      } ,
+    
+      {
+        "value" : " How does UQ support international students? ",
+        "synonyms": [
+          " How does UQ support international students? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need to demonstrate English proficiency for entry to a UQ program? ",
+        "synonyms": [
+          " Do I need to demonstrate English proficiency for entry to a UQ program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the minimum OP or cut-off rank to qualify for programs at UQ? ",
+        "synonyms": [
+          " What is the minimum OP or cut-off rank to qualify for programs at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a university medal? ",
+        "synonyms": [
+          " What is a university medal? "
+        ]
+      } ,
+    
+      {
+        "value" : " Which degree is best to study before the Doctor of Medicine MD? ",
+        "synonyms": [
+          " Which degree is best to study before the Doctor of Medicine MD? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the UQ Bonus Rank Scheme? ",
+        "synonyms": [
+          " What is the UQ Bonus Rank Scheme? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study for actuary qualifications at UQ? ",
+        "synonyms": [
+          " Can I study for actuary qualifications at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for on-campus accommodation? ",
+        "synonyms": [
+          " How do I apply for on-campus accommodation? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit for my undergraduate diploma towards my bachelor degree? ",
+        "synonyms": [
+          " Can I get credit for my undergraduate diploma towards my bachelor degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student do I need to get my qualifications and transcripts translated into English? ",
+        "synonyms": [
+          " I am an international student do I need to get my qualifications and transcripts translated into English? "
+        ]
+      } ,
+    
+      {
+        "value" : " How does UQ use the UMAT to choose students for medicine, dentistry and health science degrees? ",
+        "synonyms": [
+          " How does UQ use the UMAT to choose students for medicine, dentistry and health science degrees? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I find out if my program can be completed part-time? ",
+        "synonyms": [
+          " How do I find out if my program can be completed part-time? "
+        ]
+      } ,
+    
+      {
+        "value" : " When are my fees due? ",
+        "synonyms": [
+          " When are my fees due? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I go on exchange in a postgraduate degree? ",
+        "synonyms": [
+          " Can I go on exchange in a postgraduate degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I change program? ",
+        "synonyms": [
+          " How do I change program? "
+        ]
+      } ,
+    
+      {
+        "value" : " I'm interested in studying a language but not as part of my degree. Do you offer short courses? ",
+        "synonyms": [
+          " I'm interested in studying a language but not as part of my degree. Do you offer short courses? "
+        ]
+      } ,
+    
+      {
+        "value" : " I attend another university can I study at UQ as well? ",
+        "synonyms": [
+          " I attend another university can I study at UQ as well? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am a New Zealand citizen what scholarships am I eligible for? ",
+        "synonyms": [
+          " I am a New Zealand citizen what scholarships am I eligible for? "
+        ]
+      } ,
+    
+      {
+        "value" : " What software is available? ",
+        "synonyms": [
+          " What software is available? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for an undergraduate program? ",
+        "synonyms": [
+          " How do I apply for an undergraduate program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I find past exam papers? ",
+        "synonyms": [
+          " Where can I find past exam papers? "
+        ]
+      } ,
+    
+      {
+        "value" : " How much work are you expected to do outside of class time? ",
+        "synonyms": [
+          " How much work are you expected to do outside of class time? "
+        ]
+      } ,
+    
+      {
+        "value" : " How fluent will I be when I finish my language major/minor/diploma/extended major and how much is this affected by my previous knowledge? ",
+        "synonyms": [
+          " How fluent will I be when I finish my language major/minor/diploma/extended major and how much is this affected by my previous knowledge? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I get my student ID card? ",
+        "synonyms": [
+          " How do I get my student ID card? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need a Tax File Number to obtain a HELP loan? ",
+        "synonyms": [
+          " Do I need a Tax File Number to obtain a HELP loan? "
+        ]
+      } ,
+    
+      {
+        "value" : " What's a Blue Card, why will I need one, how do I apply? ",
+        "synonyms": [
+          " What's a Blue Card, why will I need one, how do I apply? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study full-time in the external mode? ",
+        "synonyms": [
+          " Can I study full-time in the external mode? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I take language courses as part of my degree? ",
+        "synonyms": [
+          " Can I take language courses as part of my degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I get help with my visa application? ",
+        "synonyms": [
+          " Where can I get help with my visa application? "
+        ]
+      } ,
+    
+      {
+        "value" : " The difference between internal and external offerings at the School of Public Health ",
+        "synonyms": [
+          " The difference between internal and external offerings at the School of Public Health "
+        ]
+      } ,
+    
+      {
+        "value" : " How many referees do I need to provide? ",
+        "synonyms": [
+          " How many referees do I need to provide? "
+        ]
+      } ,
+    
+      {
+        "value" : " What support is available if I have a disability? ",
+        "synonyms": [
+          " What support is available if I have a disability? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if I have not completed the required prerequisites for my preferred program? ",
+        "synonyms": [
+          " What if I have not completed the required prerequisites for my preferred program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I park at UQ's St Lucia campus? ",
+        "synonyms": [
+          " Where can I park at UQ's St Lucia campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the selection process for Graduate Entry Medicine? ",
+        "synonyms": [
+          " What is the selection process for Graduate Entry Medicine? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the difference between the 32 unit and 24 unit Master of Communication programs? ",
+        "synonyms": [
+          " What is the difference between the 32 unit and 24 unit Master of Communication programs? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need to provide my UMAT score to QTAC? ",
+        "synonyms": [
+          " Do I need to provide my UMAT score to QTAC? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the Herston campus? ",
+        "synonyms": [
+          " Where is the Herston campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What entry requirements apply for admission? ",
+        "synonyms": [
+          " What entry requirements apply for admission? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I buy second-hand textbooks? ",
+        "synonyms": [
+          " Can I buy second-hand textbooks? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I print from my laptop, tablet or phone in the Library? ",
+        "synonyms": [
+          " Can I print from my laptop, tablet or phone in the Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I upgrade my qualifications to improve my chances of gaining entry to UQ? ",
+        "synonyms": [
+          " How do I upgrade my qualifications to improve my chances of gaining entry to UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Are you looking for course materials, assessment, or tutorial support? ",
+        "synonyms": [
+          " Are you looking for course materials, assessment, or tutorial support? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a minor? ",
+        "synonyms": [
+          " What is a minor? "
+        ]
+      } ,
+    
+      {
+        "value" : " How much does it cost to park at UQ? ",
+        "synonyms": [
+          " How much does it cost to park at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I find somewhere to live? ",
+        "synonyms": [
+          " How do I find somewhere to live? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is QTAC? ",
+        "synonyms": [
+          " What is QTAC? "
+        ]
+      } ,
+    
+      {
+        "value" : " Am I eligible for a HECS-HELP or FEE-HELP loan? ",
+        "synonyms": [
+          " Am I eligible for a HECS-HELP or FEE-HELP loan? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student. How do I change my major? ",
+        "synonyms": [
+          " I am an international student. How do I change my major? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have a UQ scholarship managed via Aurion, Do I have staff access to the library? ",
+        "synonyms": [
+          " I have a UQ scholarship managed via Aurion, Do I have staff access to the library? "
+        ]
+      } ,
+    
+      {
+        "value" : " Student Services and Amenities Fee SSAF. ",
+        "synonyms": [
+          " Student Services and Amenities Fee SSAF. "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit for previous studies? ",
+        "synonyms": [
+          " Can I get credit for previous studies? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Special Tertiary Admissions Test STAT? ",
+        "synonyms": [
+          " What is the Special Tertiary Admissions Test STAT? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have a clash between two language courses, what can I do? ",
+        "synonyms": [
+          " I have a clash between two language courses, what can I do? "
+        ]
+      } ,
+    
+      {
+        "value" : " Are lockers available in the Library? ",
+        "synonyms": [
+          " Are lockers available in the Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " Am I eligible for a Commonwealth Supported Place at UQ? ",
+        "synonyms": [
+          " Am I eligible for a Commonwealth Supported Place at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have accepted my offer, what do I do now? ",
+        "synonyms": [
+          " I have accepted my offer, what do I do now? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I transfer to the Bachelor of Dental Science BDSc program at UQ from another university? ",
+        "synonyms": [
+          " Can I transfer to the Bachelor of Dental Science BDSc program at UQ from another university? "
+        ]
+      } ,
+    
+      {
+        "value" : " What dual degrees can I study with a Bachelor of Communication? ",
+        "synonyms": [
+          " What dual degrees can I study with a Bachelor of Communication? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I defer my commencement of the Doctor of Medicine MD program? ",
+        "synonyms": [
+          " Can I defer my commencement of the Doctor of Medicine MD program? "
+        ]
+      } ,
+    
+      {
+        "value" : " How long does it take to complete a Diploma in Languages? ",
+        "synonyms": [
+          " How long does it take to complete a Diploma in Languages? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a criminology degree? ",
+        "synonyms": [
+          " What are my career opportunities with a criminology degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student. How do I check the progress of my application? ",
+        "synonyms": [
+          " I am an international student. How do I check the progress of my application? "
+        ]
+      } ,
+    
+      {
+        "value" : " What student accommodation is available? ",
+        "synonyms": [
+          " What student accommodation is available? "
+        ]
+      } ,
+    
+      {
+        "value" : " What dual degrees can I study with the Bachelor of Science? ",
+        "synonyms": [
+          " What dual degrees can I study with the Bachelor of Science? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I book an individual or group study room in the Library? ",
+        "synonyms": [
+          " Can I book an individual or group study room in the Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student what documents do I need to supply with my application? ",
+        "synonyms": [
+          " I am an international student what documents do I need to supply with my application? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a sociology degree? ",
+        "synonyms": [
+          " What are my career opportunities with a sociology degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student can I get a scholarship? ",
+        "synonyms": [
+          " I am an international student can I get a scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an elite athlete what scholarships can UQ offer me? ",
+        "synonyms": [
+          " I am an elite athlete what scholarships can UQ offer me? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a program? ",
+        "synonyms": [
+          " What is a program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is Personal Competencies Assessment PCA? ",
+        "synonyms": [
+          " What is Personal Competencies Assessment PCA? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I find scholarship details and how do I know which scholarships I am eligible for? ",
+        "synonyms": [
+          " Where can I find scholarship details and how do I know which scholarships I am eligible for? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I get assignment help, finding information and referencing? ",
+        "synonyms": [
+          " Where can I get assignment help, finding information and referencing? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student. Is Brisbane a safe place? ",
+        "synonyms": [
+          " I am an international student. Is Brisbane a safe place? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I find a journal article? ",
+        "synonyms": [
+          " How can I find a journal article? "
+        ]
+      } ,
+    
+      {
+        "value" : " What career opportunities will I have with an anthropology degree? ",
+        "synonyms": [
+          " What career opportunities will I have with an anthropology degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " When must I pay the Student Services and Amenities Fee SSAF? ",
+        "synonyms": [
+          " When must I pay the Student Services and Amenities Fee SSAF? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the entry requirements for the MBA program? ",
+        "synonyms": [
+          " What are the entry requirements for the MBA program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I buy books on campus? ",
+        "synonyms": [
+          " Where can I buy books on campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " Swipe card help? ",
+        "synonyms": [
+          " Swipe card help? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a faculty? ",
+        "synonyms": [
+          " What is a faculty? "
+        ]
+      } ,
+    
+      {
+        "value" : " Will I have to pay a charge for an overdue Library book? ",
+        "synonyms": [
+          " Will I have to pay a charge for an overdue Library book? "
+        ]
+      } ,
+    
+      {
+        "value" : " How will I know if I have completed my program requirements and can graduate? ",
+        "synonyms": [
+          " How will I know if I have completed my program requirements and can graduate? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is meant by interruption to studies? ",
+        "synonyms": [
+          " What is meant by interruption to studies? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a Diploma in Languages? ",
+        "synonyms": [
+          " What is a Diploma in Languages? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is the Fryer Library open to the public? ",
+        "synonyms": [
+          " Is the Fryer Library open to the public? "
+        ]
+      } ,
+    
+      {
+        "value" : " I.T. help for students? ",
+        "synonyms": [
+          " I.T. help for students? "
+        ]
+      } ,
+    
+      {
+        "value" : " In what sequence should I take my language courses? ",
+        "synonyms": [
+          " In what sequence should I take my language courses? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for a HECS-HELP or FEE-HELP loan? ",
+        "synonyms": [
+          " How do I apply for a HECS-HELP or FEE-HELP loan? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I borrow books from the Fryer Library? ",
+        "synonyms": [
+          " Can I borrow books from the Fryer Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is postgraduate study required to become a Psychologist? ",
+        "synonyms": [
+          " Is postgraduate study required to become a Psychologist? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a Commonwealth supported place CSP? ",
+        "synonyms": [
+          " What is a Commonwealth supported place CSP? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if the book I want is not available at UQ Library? ",
+        "synonyms": [
+          " What if the book I want is not available at UQ Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have studied at TAFE will this help me study at UQ? ",
+        "synonyms": [
+          " I have studied at TAFE will this help me study at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the entry requirements for UQ? ",
+        "synonyms": [
+          " What are the entry requirements for UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I stop unwanted Learn.UQ Blackboard notifications? ",
+        "synonyms": [
+          " How do I stop unwanted Learn.UQ Blackboard notifications? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I access a UQ thesis? ",
+        "synonyms": [
+          " How can I access a UQ thesis? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I make copies of material in Fryer? ",
+        "synonyms": [
+          " Can I make copies of material in Fryer? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the pathways to studying Psychology at UQ? ",
+        "synonyms": [
+          " What are the pathways to studying Psychology at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Australian Institute for Bioengineering and Nanotechnology AIBN? ",
+        "synonyms": [
+          " What is the Australian Institute for Bioengineering and Nanotechnology AIBN? "
+        ]
+      } ,
+    
+      {
+        "value" : " Why has the due date on my loan changed? ",
+        "synonyms": [
+          " Why has the due date on my loan changed? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I park at UQ Gatton? ",
+        "synonyms": [
+          " Where can I park at UQ Gatton? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I make a donation to the Library's collections? ",
+        "synonyms": [
+          " How can I make a donation to the Library's collections? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I still do an MBA if I don't have a degree? ",
+        "synonyms": [
+          " Can I still do an MBA if I don't have a degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I do a Master of Clinical Exercise Physiology on completion of the Bachelor of Health, Sport and Physical Education Honours? ",
+        "synonyms": [
+          " Can I do a Master of Clinical Exercise Physiology on completion of the Bachelor of Health, Sport and Physical Education Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " If I have completed courses in another tertiary program, can I receive credit for them in the Bachelor of Dental Science Honours BDSc Hons program? ",
+        "synonyms": [
+          " If I have completed courses in another tertiary program, can I receive credit for them in the Bachelor of Dental Science Honours BDSc Hons program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What majors are in the Bachelor of Science BSc? ",
+        "synonyms": [
+          " What majors are in the Bachelor of Science BSc? "
+        ]
+      } ,
+    
+      {
+        "value" : " What's a 'high use' book and where can I get one? ",
+        "synonyms": [
+          " What's a 'high use' book and where can I get one? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I work in my profession as soon as I finish my Health and Rehabilitation Sciences degree? ",
+        "synonyms": [
+          " Can I work in my profession as soon as I finish my Health and Rehabilitation Sciences degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Access to the Library during the break? ",
+        "synonyms": [
+          " Access to the Library during the break? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is there a bridging program for overseas-trained dentists? ",
+        "synonyms": [
+          " Is there a bridging program for overseas-trained dentists? "
+        ]
+      } ,
+    
+      {
+        "value" : " When do I indicate my place preferences for a Commonwealth supported place, Medical Rural Bonded Scholarship place, and Bonded Medical place in the MBBS program? ",
+        "synonyms": [
+          " When do I indicate my place preferences for a Commonwealth supported place, Medical Rural Bonded Scholarship place, and Bonded Medical place in the MBBS program? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I meet prerequisites not satisfied through Year 12 studies? ",
+        "synonyms": [
+          " How can I meet prerequisites not satisfied through Year 12 studies? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student and have completed my undergraduate program. I now intend to study a postgraduate program what do I need to do about my student visa? ",
+        "synonyms": [
+          " I am an international student and have completed my undergraduate program. I now intend to study a postgraduate program what do I need to do about my student visa? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study education at UQ? ",
+        "synonyms": [
+          " Can I study education at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study public relations at UQ? ",
+        "synonyms": [
+          " Can I study public relations at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How long can I go on exchange for? ",
+        "synonyms": [
+          " How long can I go on exchange for? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I receive Centrelink payments while I'm on exchange? ",
+        "synonyms": [
+          " Can I receive Centrelink payments while I'm on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " What career can I choose with a science degree? ",
+        "synonyms": [
+          " What career can I choose with a science degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is there someone I can talk to about doing science at UQ? ",
+        "synonyms": [
+          " Is there someone I can talk to about doing science at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the career outcomes on completion of the Masters of Public Health MPH or the Masters of International Public Health MIPH? ",
+        "synonyms": [
+          " What are the career outcomes on completion of the Masters of Public Health MPH or the Masters of International Public Health MIPH? "
+        ]
+      } ,
+    
+      {
+        "value" : " I can't log in to the Library. What should I do? ",
+        "synonyms": [
+          " I can't log in to the Library. What should I do? "
+        ]
+      } ,
+    
+      {
+        "value" : " Who do I contact to discuss my options for academic credit? ",
+        "synonyms": [
+          " Who do I contact to discuss my options for academic credit? "
+        ]
+      } ,
+    
+      {
+        "value" : " What medical services are on campus? ",
+        "synonyms": [
+          " What medical services are on campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a Bachelor of Business Management? ",
+        "synonyms": [
+          " What are my career opportunities with a Bachelor of Business Management? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need to select an honours supervisor now? ",
+        "synonyms": [
+          " Do I need to select an honours supervisor now? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have finished Year 12 and want to defer next year can I do this? ",
+        "synonyms": [
+          " I have finished Year 12 and want to defer next year can I do this? "
+        ]
+      } ,
+    
+      {
+        "value" : " When do I get a UQ username and password? ",
+        "synonyms": [
+          " When do I get a UQ username and password? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I go on exchange to a university not on the partner list? ",
+        "synonyms": [
+          " Can I go on exchange to a university not on the partner list? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am enrolled at another university but I want to change to UQ. Do I need to apply for a new visa even if my current one is still valid? ",
+        "synonyms": [
+          " I am enrolled at another university but I want to change to UQ. Do I need to apply for a new visa even if my current one is still valid? "
+        ]
+      } ,
+    
+      {
+        "value" : " What options are available if I am not admitted into the Clinical Exercise Physiology major following completion of my second year of the Bachelor of Exercise and Sport Sciences Honours? ",
+        "synonyms": [
+          " What options are available if I am not admitted into the Clinical Exercise Physiology major following completion of my second year of the Bachelor of Exercise and Sport Sciences Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I order copies of material from the Fryer Library collection online? ",
+        "synonyms": [
+          " Can I order copies of material from the Fryer Library collection online? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is an \",offer\",? Australian undergraduate ",
+        "synonyms": [
+          " What is an \",offer\",? Australian undergraduate "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I change the order or add to my QTAC course preferences? ",
+        "synonyms": [
+          " Can I change the order or add to my QTAC course preferences? "
+        ]
+      } ,
+    
+      {
+        "value" : " How is the Undergraduate Medicine and Health Sciences Admission Test UMAT scored? ",
+        "synonyms": [
+          " How is the Undergraduate Medicine and Health Sciences Admission Test UMAT scored? "
+        ]
+      } ,
+    
+      {
+        "value" : " Are scholarship payments considered income for tax or Centrelink purposes? ",
+        "synonyms": [
+          " Are scholarship payments considered income for tax or Centrelink purposes? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a unit? ",
+        "synonyms": [
+          " What is a unit? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I enrol? ",
+        "synonyms": [
+          " How do I enrol? "
+        ]
+      } ,
+    
+      {
+        "value" : " What happens if I don't get into my first preference for exchange? ",
+        "synonyms": [
+          " What happens if I don't get into my first preference for exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " How much will it cost me to go on exchange for one semester? ",
+        "synonyms": [
+          " How much will it cost me to go on exchange for one semester? "
+        ]
+      } ,
+    
+      {
+        "value" : " Why should I study science? ",
+        "synonyms": [
+          " Why should I study science? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I select my courses for my science program? ",
+        "synonyms": [
+          " How do I select my courses for my science program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study my MBA part-time? ",
+        "synonyms": [
+          " Can I study my MBA part-time? "
+        ]
+      } ,
+    
+      {
+        "value" : " My degree is over 10 years old. Can I still apply for Medicine? ",
+        "synonyms": [
+          " My degree is over 10 years old. Can I still apply for Medicine? "
+        ]
+      } ,
+    
+      {
+        "value" : " When are honours awarded? ",
+        "synonyms": [
+          " When are honours awarded? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is deferring? ",
+        "synonyms": [
+          " What is deferring? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I view material from the Fryer Library collection online? ",
+        "synonyms": [
+          " Can I view material from the Fryer Library collection online? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is O Week? ",
+        "synonyms": [
+          " What is O Week? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need work experience for an MBA? ",
+        "synonyms": [
+          " Do I need work experience for an MBA? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I go on student exchange in the last semester of my program? ",
+        "synonyms": [
+          " Can I go on student exchange in the last semester of my program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I do my Honours year on exchange? ",
+        "synonyms": [
+          " Can I do my Honours year on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " When is Open Day? ",
+        "synonyms": [
+          " When is Open Day? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I get UQ publications sent to me? ",
+        "synonyms": [
+          " How can I get UQ publications sent to me? "
+        ]
+      } ,
+    
+      {
+        "value" : " I want to study science. What does UQ offer? ",
+        "synonyms": [
+          " I want to study science. What does UQ offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " What does an occupational therapist do? ",
+        "synonyms": [
+          " What does an occupational therapist do? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is mySI-net? ",
+        "synonyms": [
+          " What is mySI-net? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the St Lucia campus? ",
+        "synonyms": [
+          " Where is the St Lucia campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " UQ Exchange ",
+        "synonyms": [
+          " UQ Exchange "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit if I transfer into the Bachelor of Science BSc? ",
+        "synonyms": [
+          " Can I get credit if I transfer into the Bachelor of Science BSc? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I cancel my Library training booking? ",
+        "synonyms": [
+          " How do I cancel my Library training booking? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the Ipswich campus? ",
+        "synonyms": [
+          " Where is the Ipswich campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is The University of Queensland Diamantina Institute UQDI? ",
+        "synonyms": [
+          " What is The University of Queensland Diamantina Institute UQDI? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am currently studying at an overseas university. Can I study at UQ as part of my degree? ",
+        "synonyms": [
+          " I am currently studying at an overseas university. Can I study at UQ as part of my degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I commence study at UQ mid-year? What programs are available? ",
+        "synonyms": [
+          " Can I commence study at UQ mid-year? What programs are available? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is UQ International located? ",
+        "synonyms": [
+          " Where is UQ International located? "
+        ]
+      } ,
+    
+      {
+        "value" : " If I do a year of Science or Occupational Health and Safety Science Honours, can I get into second year Pharmacy? ",
+        "synonyms": [
+          " If I do a year of Science or Occupational Health and Safety Science Honours, can I get into second year Pharmacy? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an external student where can I stay for residential courses at Gatton? ",
+        "synonyms": [
+          " I am an external student where can I stay for residential courses at Gatton? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the Student Centre? ",
+        "synonyms": [
+          " Where is the Student Centre? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is Student Services? ",
+        "synonyms": [
+          " Where is Student Services? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I pay the Student Services and Amenities Fee SSAF? ",
+        "synonyms": [
+          " How can I pay the Student Services and Amenities Fee SSAF? "
+        ]
+      } ,
+    
+      {
+        "value" : " Starting study again after deferring or interrupting my studies. ",
+        "synonyms": [
+          " Starting study again after deferring or interrupting my studies. "
+        ]
+      } ,
+    
+      {
+        "value" : " If I am in my first year now can I apply for an exchange next year? ",
+        "synonyms": [
+          " If I am in my first year now can I apply for an exchange next year? "
+        ]
+      } ,
+    
+      {
+        "value" : " What am I qualified to do after completing a Bachelor of Health, Sport and Physical Education Honours? ",
+        "synonyms": [
+          " What am I qualified to do after completing a Bachelor of Health, Sport and Physical Education Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " What scholarships are available to UQ-enrolled international students on exchange? ",
+        "synonyms": [
+          " What scholarships are available to UQ-enrolled international students on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " What languages can you do a Masters in Translation and Interpreting in? ",
+        "synonyms": [
+          " What languages can you do a Masters in Translation and Interpreting in? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study the Bachelor of Exercise and Sport Sciences Honours BExSS Hons degree part-time? ",
+        "synonyms": [
+          " Can I study the Bachelor of Exercise and Sport Sciences Honours BExSS Hons degree part-time? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I become a Clinical Exercise Physiologist with a Bachelor of Exercise and Sport Sciences Honours BExSS Hons? ",
+        "synonyms": [
+          " Can I become a Clinical Exercise Physiologist with a Bachelor of Exercise and Sport Sciences Honours BExSS Hons? "
+        ]
+      } ,
+    
+      {
+        "value" : " What to study whilst on exchange ",
+        "synonyms": [
+          " What to study whilst on exchange "
+        ]
+      } ,
+    
+      {
+        "value" : " Can UQ staff book a Library training room? ",
+        "synonyms": [
+          " Can UQ staff book a Library training room? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student at UQ if I go on exchange, am I still covered by the overseas Student Health Cover OSHC? ",
+        "synonyms": [
+          " I am an international student at UQ if I go on exchange, am I still covered by the overseas Student Health Cover OSHC? "
+        ]
+      } ,
+    
+      {
+        "value" : " What will I gain from the Exercise and Sport Sciences pathway in the Bachelor of Exercise and Sport Sciences Honours program? ",
+        "synonyms": [
+          " What will I gain from the Exercise and Sport Sciences pathway in the Bachelor of Exercise and Sport Sciences Honours program? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for a program through QTAC? ",
+        "synonyms": [
+          " How do I apply for a program through QTAC? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I transfer into the Bachelor of Exercise and Sport Sciences Honours or the Bachelor of Health, Sport and Physical Education Honours programs if I do not meet the science entry requirements? ",
+        "synonyms": [
+          " Can I transfer into the Bachelor of Exercise and Sport Sciences Honours or the Bachelor of Health, Sport and Physical Education Honours programs if I do not meet the science entry requirements? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I get my student ID card? ",
+        "synonyms": [
+          " How do I get my student ID card? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study a concurrent diploma at UQ without being enrolled in a bachelor program? ",
+        "synonyms": [
+          " Can I study a concurrent diploma at UQ without being enrolled in a bachelor program? "
+        ]
+      } ,
+    
+      {
+        "value" : " I completed high school a long time ago how do I apply? ",
+        "synonyms": [
+          " I completed high school a long time ago how do I apply? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with an Arts degree? ",
+        "synonyms": [
+          " What are my career opportunities with an Arts degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am a dental hygienist/therapist, dental technician or dental assistant. Will this improve my chances of gaining entry into the Bachelor of Dental Science BDSc? ",
+        "synonyms": [
+          " I am a dental hygienist/therapist, dental technician or dental assistant. Will this improve my chances of gaining entry into the Bachelor of Dental Science BDSc? "
+        ]
+      } ,
+    
+      {
+        "value" : " What happens when I arrive in my host city for exchange? ",
+        "synonyms": [
+          " What happens when I arrive in my host city for exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is my QTAC course code also my UQ course code? ",
+        "synonyms": [
+          " Is my QTAC course code also my UQ course code? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I talk to someone about doing an MBA at UQ? ",
+        "synonyms": [
+          " Can I talk to someone about doing an MBA at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have an injured / sick animal. Can I bring it in to be looked at by the veterinary students free of charge or at a discounted price? ",
+        "synonyms": [
+          " I have an injured / sick animal. Can I bring it in to be looked at by the veterinary students free of charge or at a discounted price? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I go on exchange during the summer? ",
+        "synonyms": [
+          " Can I go on exchange during the summer? "
+        ]
+      } ,
+    
+      {
+        "value" : " How much does it cost to study at UQ? ",
+        "synonyms": [
+          " How much does it cost to study at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student can I get an Australia Awards scholarship? ",
+        "synonyms": [
+          " I am an international student can I get an Australia Awards scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I do Bachelor of Arts Honours? ",
+        "synonyms": [
+          " Can I do Bachelor of Arts Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " Are there enrolment quota limits on my program? ",
+        "synonyms": [
+          " Are there enrolment quota limits on my program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What happens if I go on exchange for a semester and want to stay longer? ",
+        "synonyms": [
+          " What happens if I go on exchange for a semester and want to stay longer? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I make changes to an application that I have submitted? ",
+        "synonyms": [
+          " How can I make changes to an application that I have submitted? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is a postgraduate program? ",
+        "synonyms": [
+          " What is a postgraduate program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What banks or ATMs are on campus? ",
+        "synonyms": [
+          " What banks or ATMs are on campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student what programs do you offer? ",
+        "synonyms": [
+          " I am an international student what programs do you offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the MD? ",
+        "synonyms": [
+          " What is the MD? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I have to speak a foreign language to study in a non-English speaking country? ",
+        "synonyms": [
+          " Do I have to speak a foreign language to study in a non-English speaking country? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is UMAT? ",
+        "synonyms": [
+          " What is UMAT? "
+        ]
+      } ,
+    
+      {
+        "value" : " After I submit my UQ Abroad application, how soon can I expect a response? ",
+        "synonyms": [
+          " After I submit my UQ Abroad application, how soon can I expect a response? "
+        ]
+      } ,
+    
+      {
+        "value" : " What clubs can I join at UQ? ",
+        "synonyms": [
+          " What clubs can I join at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does UQ offer scholarships to commencing students? ",
+        "synonyms": [
+          " Does UQ offer scholarships to commencing students? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is any special consideration given when assessing applications? ",
+        "synonyms": [
+          " Is any special consideration given when assessing applications? "
+        ]
+      } ,
+    
+      {
+        "value" : " What should I study in Years 11 or 12 as I aim for tertiary study? ",
+        "synonyms": [
+          " What should I study in Years 11 or 12 as I aim for tertiary study? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I view or update my application via QTAC? ",
+        "synonyms": [
+          " Can I view or update my application via QTAC? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have been offered an undergraduate or postgraduate coursework scholarship but wish to change my program will this affect my scholarship offer? ",
+        "synonyms": [
+          " I have been offered an undergraduate or postgraduate coursework scholarship but wish to change my program will this affect my scholarship offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " What languages do you teach at the School of Languages and Cultures? ",
+        "synonyms": [
+          " What languages do you teach at the School of Languages and Cultures? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I do two degrees in Exercise and Sport Sciences and Health, and Sport and Physical Education? ",
+        "synonyms": [
+          " Can I do two degrees in Exercise and Sport Sciences and Health, and Sport and Physical Education? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a Bachelor of Pharmacy Honours? ",
+        "synonyms": [
+          " What are my career opportunities with a Bachelor of Pharmacy Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study sport at UQ? ",
+        "synonyms": [
+          " Can I study sport at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I go on exchange for longer than a year? ",
+        "synonyms": [
+          " Can I go on exchange for longer than a year? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I defer my exchange once I have been offered a place? ",
+        "synonyms": [
+          " Can I defer my exchange once I have been offered a place? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I travel before I go on exchange? ",
+        "synonyms": [
+          " Can I travel before I go on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " I've been accepted into UQ Abroad can I buy my plane tickets? ",
+        "synonyms": [
+          " I've been accepted into UQ Abroad can I buy my plane tickets? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does UQ visit regional schools/areas? ",
+        "synonyms": [
+          " Does UQ visit regional schools/areas? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is the honours component optional in science? ",
+        "synonyms": [
+          " Is the honours component optional in science? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the UQ Volunteer Expo? ",
+        "synonyms": [
+          " What is the UQ Volunteer Expo? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit towards the Bachelor of Nursing if I am an Endorsed Enrolled Nurse? ",
+        "synonyms": [
+          " Can I get credit towards the Bachelor of Nursing if I am an Endorsed Enrolled Nurse? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities on completion of the Bachelor of Exercise and Sport Sciences BExSS Honours program? ",
+        "synonyms": [
+          " What are my career opportunities on completion of the Bachelor of Exercise and Sport Sciences BExSS Honours program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Sustainable Minerals Institute SMI? ",
+        "synonyms": [
+          " What is the Sustainable Minerals Institute SMI? "
+        ]
+      } ,
+    
+      {
+        "value" : " When is the UQ Library open? ",
+        "synonyms": [
+          " When is the UQ Library open? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I access unpublished manuscripts in the Fryer Library? ",
+        "synonyms": [
+          " How do I access unpublished manuscripts in the Fryer Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " What courses can I study for a Bachelor of Arts degree BA? ",
+        "synonyms": [
+          " What courses can I study for a Bachelor of Arts degree BA? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I donate material to the Fryer Library? ",
+        "synonyms": [
+          " How do I donate material to the Fryer Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I find a thesis from another university? ",
+        "synonyms": [
+          " How can I find a thesis from another university? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I have to pay tuition to the host university while I'm on exchange? ",
+        "synonyms": [
+          " Do I have to pay tuition to the host university while I'm on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " How early should I arrive at the host university for my exchange semester? ",
+        "synonyms": [
+          " How early should I arrive at the host university for my exchange semester? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an Aboriginal or Torres Strait Islander student which scholarships am I eligible for? ",
+        "synonyms": [
+          " I am an Aboriginal or Torres Strait Islander student which scholarships am I eligible for? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the career outcomes for Health Sciences graduates? ",
+        "synonyms": [
+          " What are the career outcomes for Health Sciences graduates? "
+        ]
+      } ,
+    
+      {
+        "value" : " What job can I get when I study Psychology? ",
+        "synonyms": [
+          " What job can I get when I study Psychology? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I still apply for exchange if I have failed a course? ",
+        "synonyms": [
+          " Can I still apply for exchange if I have failed a course? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student at UQ if I go on exchange, will my study overseas count towards eligibility for a Poststudy Work Visa? ",
+        "synonyms": [
+          " I am an international student at UQ if I go on exchange, will my study overseas count towards eligibility for a Poststudy Work Visa? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the prerequisites for entry to a science program? ",
+        "synonyms": [
+          " What are the prerequisites for entry to a science program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What economics programs does UQ offer? ",
+        "synonyms": [
+          " What economics programs does UQ offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I start the Bachelor of Pharmacy Honours in Semester 2? ",
+        "synonyms": [
+          " Can I start the Bachelor of Pharmacy Honours in Semester 2? "
+        ]
+      } ,
+    
+      {
+        "value" : " Are there special entry policies for Aboriginal or Torres Strait Islander students? ",
+        "synonyms": [
+          " Are there special entry policies for Aboriginal or Torres Strait Islander students? "
+        ]
+      } ,
+    
+      {
+        "value" : " What career opportunities will I have with an archaeology degree? ",
+        "synonyms": [
+          " What career opportunities will I have with an archaeology degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can the Faculty of Business, Economics and Law help me find a job? ",
+        "synonyms": [
+          " Can the Faculty of Business, Economics and Law help me find a job? "
+        ]
+      } ,
+    
+      {
+        "value" : " What makes UQ Nursing and Midwifery programs different? ",
+        "synonyms": [
+          " What makes UQ Nursing and Midwifery programs different? "
+        ]
+      } ,
+    
+      {
+        "value" : " Which host university is the best place for me to go on exchange to? ",
+        "synonyms": [
+          " Which host university is the best place for me to go on exchange to? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I find further information on recognised government insurance schemes? ",
+        "synonyms": [
+          " Where can I find further information on recognised government insurance schemes? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does the School of Languages and Cultures teach any courses via distance i.e. over the internet? ",
+        "synonyms": [
+          " Does the School of Languages and Cultures teach any courses via distance i.e. over the internet? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if I applied for a SA-HELP loan and now wish to pay the Student Services and Amenities Fee SSAF up front? ",
+        "synonyms": [
+          " What if I applied for a SA-HELP loan and now wish to pay the Student Services and Amenities Fee SSAF up front? "
+        ]
+      } ,
+    
+      {
+        "value" : " When can I view the historical collection at the Gatton campus? ",
+        "synonyms": [
+          " When can I view the historical collection at the Gatton campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " Will I gain practical experience teaching while studying? ",
+        "synonyms": [
+          " Will I gain practical experience teaching while studying? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an overseas trained dentist are my chances of gaining entry to UQ dental programs increased? ",
+        "synonyms": [
+          " I am an overseas trained dentist are my chances of gaining entry to UQ dental programs increased? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I check if any computers are available for use in the Library? ",
+        "synonyms": [
+          " How can I check if any computers are available for use in the Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is an undergraduate program? ",
+        "synonyms": [
+          " What is an undergraduate program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Only one section of my GAMSAT test results is under 50. Will UQ accept my application for the MD? ",
+        "synonyms": [
+          " Only one section of my GAMSAT test results is under 50. Will UQ accept my application for the MD? "
+        ]
+      } ,
+    
+      {
+        "value" : " Are the ‘placement tests’ for languages written tests or just oral interviews? ",
+        "synonyms": [
+          " Are the ‘placement tests’ for languages written tests or just oral interviews? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study a concurrent diploma while I'm completing a dual program? ",
+        "synonyms": [
+          " Can I study a concurrent diploma while I'm completing a dual program? "
+        ]
+      } ,
+    
+      {
+        "value" : " I studied Year 12 in another state how do I convert my Year 12 results to an OP? ",
+        "synonyms": [
+          " I studied Year 12 in another state how do I convert my Year 12 results to an OP? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does UQ use Moodle? ",
+        "synonyms": [
+          " Does UQ use Moodle? "
+        ]
+      } ,
+    
+      {
+        "value" : " What communication programs can I study at UQ? ",
+        "synonyms": [
+          " What communication programs can I study at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " When are campus tours conducted? ",
+        "synonyms": [
+          " When are campus tours conducted? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where are the books on St Lucia campus? ",
+        "synonyms": [
+          " Where are the books on St Lucia campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What job can I get with a Master in Communication Communication for Social Change? ",
+        "synonyms": [
+          " What job can I get with a Master in Communication Communication for Social Change? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student who can I talk to about studying at UQ? ",
+        "synonyms": [
+          " I am an international student who can I talk to about studying at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I buy food on campus? ",
+        "synonyms": [
+          " Where can I buy food on campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am not able to commence my program due to unforeseen circumstances can I delay my start? ",
+        "synonyms": [
+          " I am not able to commence my program due to unforeseen circumstances can I delay my start? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am in Year 12 and applying for undergraduate entry to the Doctor of Medicine MD program. Can I defer the commencement of my study at UQ? ",
+        "synonyms": [
+          " I am in Year 12 and applying for undergraduate entry to the Doctor of Medicine MD program. Can I defer the commencement of my study at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How hard are language courses compared to other university courses in arts, sciences etc? ",
+        "synonyms": [
+          " How hard are language courses compared to other university courses in arts, sciences etc? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a Bachelor of Health, Sport and Physical Education Honours? ",
+        "synonyms": [
+          " What are my career opportunities with a Bachelor of Health, Sport and Physical Education Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " What postgraduate study options will I have after completing a Bachelor of Health, Sport and Physical Education Honours? ",
+        "synonyms": [
+          " What postgraduate study options will I have after completing a Bachelor of Health, Sport and Physical Education Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " Why should I study journalism or communication at UQ? ",
+        "synonyms": [
+          " Why should I study journalism or communication at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What short-term study options are available at UQ? ",
+        "synonyms": [
+          " What short-term study options are available at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am taking courses towards a dual degree do I get my courses for exchange approved by both faculties? ",
+        "synonyms": [
+          " I am taking courses towards a dual degree do I get my courses for exchange approved by both faculties? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does UQ offer scholarships for arts, social sciences and humanities students? ",
+        "synonyms": [
+          " Does UQ offer scholarships for arts, social sciences and humanities students? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does going on exchange extend my degree? ",
+        "synonyms": [
+          " Does going on exchange extend my degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What scholarships are available to postgraduate students on exchange? ",
+        "synonyms": [
+          " What scholarships are available to postgraduate students on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student at UQ receiving a scholarship to study here can I go on exchange? ",
+        "synonyms": [
+          " I am an international student at UQ receiving a scholarship to study here can I go on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study Communication for Social Change online? ",
+        "synonyms": [
+          " Can I study Communication for Social Change online? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are Indigenous Commonwealth Scholarships ICS? ",
+        "synonyms": [
+          " What are Indigenous Commonwealth Scholarships ICS? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Queensland Brain Institute QBI? ",
+        "synonyms": [
+          " What is the Queensland Brain Institute QBI? "
+        ]
+      } ,
+    
+      {
+        "value" : " How are applicants ranked? Australian undergraduate ",
+        "synonyms": [
+          " How are applicants ranked? Australian undergraduate "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit for my exchange studies? ",
+        "synonyms": [
+          " Can I get credit for my exchange studies? "
+        ]
+      } ,
+    
+      {
+        "value" : " What public transport is available for each UQ campus? ",
+        "synonyms": [
+          " What public transport is available for each UQ campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where are the libraries at UQ located? ",
+        "synonyms": [
+          " Where are the libraries at UQ located? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I start the Masters of Public Health or Masters of International Public Health MIPH externally and change to internal study or vice versa? ",
+        "synonyms": [
+          " Can I start the Masters of Public Health or Masters of International Public Health MIPH externally and change to internal study or vice versa? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I learn a foreign language for fun? ",
+        "synonyms": [
+          " Where can I learn a foreign language for fun? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does the UQ Bonus Rank Scheme apply to scholarship applications? ",
+        "synonyms": [
+          " Does the UQ Bonus Rank Scheme apply to scholarship applications? "
+        ]
+      } ,
+    
+      {
+        "value" : " When are undergraduate applications due? ",
+        "synonyms": [
+          " When are undergraduate applications due? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I know what courses to take during my student exchange at the host university? ",
+        "synonyms": [
+          " How do I know what courses to take during my student exchange at the host university? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I prepare a study plan to go on exchange? ",
+        "synonyms": [
+          " How do I prepare a study plan to go on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for the Diploma in Languages? ",
+        "synonyms": [
+          " How do I apply for the Diploma in Languages? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I organise accommodation while I'm on exchange? ",
+        "synonyms": [
+          " How do I organise accommodation while I'm on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " Why should I study an MBA at UQ? ",
+        "synonyms": [
+          " Why should I study an MBA at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What date must I submit my scholarship application by? ",
+        "synonyms": [
+          " What date must I submit my scholarship application by? "
+        ]
+      } ,
+    
+      {
+        "value" : " How many hours should I allocate to each course? ",
+        "synonyms": [
+          " How many hours should I allocate to each course? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is the Bachelor of Exercise and Sport Sciences Honours BExSS Hons program professionally recognised? ",
+        "synonyms": [
+          " Is the Bachelor of Exercise and Sport Sciences Honours BExSS Hons program professionally recognised? "
+        ]
+      } ,
+    
+      {
+        "value" : " What health services are available at UQ? ",
+        "synonyms": [
+          " What health services are available at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Institute for Molecular Bioscience IMB? ",
+        "synonyms": [
+          " What is the Institute for Molecular Bioscience IMB? "
+        ]
+      } ,
+    
+      {
+        "value" : " What am I qualified to teach after completing a Bachelor of Health, Sport and Physical Education Honours? ",
+        "synonyms": [
+          " What am I qualified to teach after completing a Bachelor of Health, Sport and Physical Education Honours? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I export to EndNote from UQ Library Search? ",
+        "synonyms": [
+          " How do I export to EndNote from UQ Library Search? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I find rules and requirements for my preferred program? ",
+        "synonyms": [
+          " How can I find rules and requirements for my preferred program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where can I get information or advice to help with planning my program and choosing courses? ",
+        "synonyms": [
+          " Where can I get information or advice to help with planning my program and choosing courses? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a communication degree? ",
+        "synonyms": [
+          " What are my career opportunities with a communication degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can UQ help me become a teacher? ",
+        "synonyms": [
+          " How can UQ help me become a teacher? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where do I submit my UQ Abroad application? ",
+        "synonyms": [
+          " Where do I submit my UQ Abroad application? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if I can't enrol in my pre-approved courses at the exchange host university? ",
+        "synonyms": [
+          " What if I can't enrol in my pre-approved courses at the exchange host university? "
+        ]
+      } ,
+    
+      {
+        "value" : " What scholarships are available for students going on exchange? ",
+        "synonyms": [
+          " What scholarships are available for students going on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I work while on exchange? ",
+        "synonyms": [
+          " Can I work while on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " What sports clubs are at UQ? ",
+        "synonyms": [
+          " What sports clubs are at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study overseas as part of my degree? ",
+        "synonyms": [
+          " Can I study overseas as part of my degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What documents do I need to supply in support of my Academic Scholarship application? ",
+        "synonyms": [
+          " What documents do I need to supply in support of my Academic Scholarship application? "
+        ]
+      } ,
+    
+      {
+        "value" : " I deferred my university studies for a year after finishing year 12 am I still eligible for a UQ Academic Scholarship? ",
+        "synonyms": [
+          " I deferred my university studies for a year after finishing year 12 am I still eligible for a UQ Academic Scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " In what order are the offers made for the MBBS? ",
+        "synonyms": [
+          " In what order are the offers made for the MBBS? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am not receiving a Centrelink benefit, but will be at the time of enrolment can I still apply for a Commonwealth Scholarship? ",
+        "synonyms": [
+          " I am not receiving a Centrelink benefit, but will be at the time of enrolment can I still apply for a Commonwealth Scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " Will professional associations recognise my business degree? ",
+        "synonyms": [
+          " Will professional associations recognise my business degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What tourism programs does UQ offer? ",
+        "synonyms": [
+          " What tourism programs does UQ offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need to re-apply for SA-HELP each year? ",
+        "synonyms": [
+          " Do I need to re-apply for SA-HELP each year? "
+        ]
+      } ,
+    
+      {
+        "value" : " What scholarships are available for current students? ",
+        "synonyms": [
+          " What scholarships are available for current students? "
+        ]
+      } ,
+    
+      {
+        "value" : " Will my last year of the Bachelor of Dental Science BDSc program include clinical placements? ",
+        "synonyms": [
+          " Will my last year of the Bachelor of Dental Science BDSc program include clinical placements? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I choose my clinical placement location for Nursing / Midwifery? ",
+        "synonyms": [
+          " Can I choose my clinical placement location for Nursing / Midwifery? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit towards a UQ Nursing / Midwifery degree for my study at another university? ",
+        "synonyms": [
+          " Can I get credit towards a UQ Nursing / Midwifery degree for my study at another university? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for special entry schemes? ",
+        "synonyms": [
+          " How do I apply for special entry schemes? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study my degree part-time and still enrol in a concurrent diploma? ",
+        "synonyms": [
+          " Can I study my degree part-time and still enrol in a concurrent diploma? "
+        ]
+      } ,
+    
+      {
+        "value" : " When can I apply to QTAC? ",
+        "synonyms": [
+          " When can I apply to QTAC? "
+        ]
+      } ,
+    
+      {
+        "value" : " Will UQ help me with learning skills? ",
+        "synonyms": [
+          " Will UQ help me with learning skills? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study a diploma while completing my degree with a Commonwealth Supported Place CSP? ",
+        "synonyms": [
+          " Can I study a diploma while completing my degree with a Commonwealth Supported Place CSP? "
+        ]
+      } ,
+    
+      {
+        "value" : " How many student exchange places are available? ",
+        "synonyms": [
+          " How many student exchange places are available? "
+        ]
+      } ,
+    
+      {
+        "value" : " When is the deadline for UQ Abroad? ",
+        "synonyms": [
+          " When is the deadline for UQ Abroad? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I get approval for fieldwork travel as part of my Australia Awards scholarship? ",
+        "synonyms": [
+          " How can I get approval for fieldwork travel as part of my Australia Awards scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I access the UQ ePortfolio? ",
+        "synonyms": [
+          " How do I access the UQ ePortfolio? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does UQ offer childcare services on campus? ",
+        "synonyms": [
+          " Does UQ offer childcare services on campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What commerce programs does UQ offer? ",
+        "synonyms": [
+          " What commerce programs does UQ offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " What restrictions apply to cross-institutional students? ",
+        "synonyms": [
+          " What restrictions apply to cross-institutional students? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student can I get a scholarship? ",
+        "synonyms": [
+          " I am an international student can I get a scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can you do a Diploma in Languages it on its own, without also doing a Bachelor degree? ",
+        "synonyms": [
+          " Can you do a Diploma in Languages it on its own, without also doing a Bachelor degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What scholarships are available for me to study Pharmacy? ",
+        "synonyms": [
+          " What scholarships are available for me to study Pharmacy? "
+        ]
+      } ,
+    
+      {
+        "value" : " I have completed Year 12 and passed prerequisite courses how can I improve my entry rank? ",
+        "synonyms": [
+          " I have completed Year 12 and passed prerequisite courses how can I improve my entry rank? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if I cannot signon to a language class that suits my timetable? ",
+        "synonyms": [
+          " What if I cannot signon to a language class that suits my timetable? "
+        ]
+      } ,
+    
+      {
+        "value" : " What should I study if I want to be a teacher and I already have another degree? ",
+        "synonyms": [
+          " What should I study if I want to be a teacher and I already have another degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I defer my QTAC offer? ",
+        "synonyms": [
+          " Can I defer my QTAC offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the Undergraduate Medicine and Health Sciences Admission Test UMAT exam held? ",
+        "synonyms": [
+          " Where is the Undergraduate Medicine and Health Sciences Admission Test UMAT exam held? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the difference between Student Services and the Student Centre? ",
+        "synonyms": [
+          " What is the difference between Student Services and the Student Centre? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I take more than one course in the same language at the same time? ",
+        "synonyms": [
+          " Can I take more than one course in the same language at the same time? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does UQ's journalism program include internships? ",
+        "synonyms": [
+          " Does UQ's journalism program include internships? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if I can't find course descriptions for my UQ Abroad study plan? ",
+        "synonyms": [
+          " What if I can't find course descriptions for my UQ Abroad study plan? "
+        ]
+      } ,
+    
+      {
+        "value" : " How many courses do I have to take on exchange? ",
+        "synonyms": [
+          " How many courses do I have to take on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I specialise in my MBA? ",
+        "synonyms": [
+          " Can I specialise in my MBA? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is Year 12 English or equivalent a prerequisite for entry to UQ bachelor programs? ",
+        "synonyms": [
+          " Is Year 12 English or equivalent a prerequisite for entry to UQ bachelor programs? "
+        ]
+      } ,
+    
+      {
+        "value" : " How does UQ support students with disabilities and other equity concerns? ",
+        "synonyms": [
+          " How does UQ support students with disabilities and other equity concerns? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study the Bachelor of Health, Sport and Physical Education Honours BHSPE Hons degree part-time? ",
+        "synonyms": [
+          " Can I study the Bachelor of Health, Sport and Physical Education Honours BHSPE Hons degree part-time? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Gatton Past Students' Association Inc? ",
+        "synonyms": [
+          " What is the Gatton Past Students' Association Inc? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need to have my own horse for the equine programs? ",
+        "synonyms": [
+          " Do I need to have my own horse for the equine programs? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study journalism at UQ? ",
+        "synonyms": [
+          " Can I study journalism at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What can I access with my UQ Sign in? ",
+        "synonyms": [
+          " What can I access with my UQ Sign in? "
+        ]
+      } ,
+    
+      {
+        "value" : " What programs are offered at UQ? ",
+        "synonyms": [
+          " What programs are offered at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Enhanced Studies Program ESP? ",
+        "synonyms": [
+          " What is the Enhanced Studies Program ESP? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am doing a dual degree do I have to complete courses on exchange from both disciplines? ",
+        "synonyms": [
+          " I am doing a dual degree do I have to complete courses on exchange from both disciplines? "
+        ]
+      } ,
+    
+      {
+        "value" : " If I have trained as a dentist overseas, will I receive any credit for my dental degree? ",
+        "synonyms": [
+          " If I have trained as a dentist overseas, will I receive any credit for my dental degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What happens if the host university does not accept me? ",
+        "synonyms": [
+          " What happens if the host university does not accept me? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student at UQ on an international student visa can I go on exchange? ",
+        "synonyms": [
+          " I am an international student at UQ on an international student visa can I go on exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I study International Relations, Peace and Conflict Studies, Political Science, Governance and Public Policy or International Studies? ",
+        "synonyms": [
+          " How can I study International Relations, Peace and Conflict Studies, Political Science, Governance and Public Policy or International Studies? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I start my MBA later in the year? ",
+        "synonyms": [
+          " Can I start my MBA later in the year? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the UQ Centre? ",
+        "synonyms": [
+          " Where is the UQ Centre? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I see a counsellor on campus if I have a personal problem? ",
+        "synonyms": [
+          " Can I see a counsellor on campus if I have a personal problem? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am a high school student can I use the UQ Library? ",
+        "synonyms": [
+          " I am a high school student can I use the UQ Library? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student. Can you recommend an agent? ",
+        "synonyms": [
+          " I am an international student. Can you recommend an agent? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student where can I find out about financial aid? ",
+        "synonyms": [
+          " I am an international student where can I find out about financial aid? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am a Canadian student can I apply for a Canadian student loan to study at UQ? ",
+        "synonyms": [
+          " I am a Canadian student can I apply for a Canadian student loan to study at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Academic Scholarships Program? ",
+        "synonyms": [
+          " What is the Academic Scholarships Program? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study Nursing and Midwifery part-time or externally? ",
+        "synonyms": [
+          " Can I study Nursing and Midwifery part-time or externally? "
+        ]
+      } ,
+    
+      {
+        "value" : " What events are happening at UQ? ",
+        "synonyms": [
+          " What events are happening at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for a student exchange scholarship? ",
+        "synonyms": [
+          " How do I apply for a student exchange scholarship? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am studying at UQ. Who do I contact about my plans to study abroad? ",
+        "synonyms": [
+          " I am studying at UQ. Who do I contact about my plans to study abroad? "
+        ]
+      } ,
+    
+      {
+        "value" : " Is the St Lucia campus bicycle friendly? ",
+        "synonyms": [
+          " Is the St Lucia campus bicycle friendly? "
+        ]
+      } ,
+    
+      {
+        "value" : " What does the Centre for Communication and Social Change do? ",
+        "synonyms": [
+          " What does the Centre for Communication and Social Change do? "
+        ]
+      } ,
+    
+      {
+        "value" : " Why should I study Arts? ",
+        "synonyms": [
+          " Why should I study Arts? "
+        ]
+      } ,
+    
+      {
+        "value" : " Must I pay the Student Services and Amenities Fee SSAF if I do not intend to use any services or amenities? ",
+        "synonyms": [
+          " Must I pay the Student Services and Amenities Fee SSAF if I do not intend to use any services or amenities? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I be awarded my Diploma in Music Performance, Languages or Global Issues before I complete my bachelor degree? ",
+        "synonyms": [
+          " Can I be awarded my Diploma in Music Performance, Languages or Global Issues before I complete my bachelor degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can postgraduate students enrol in the Diploma in Languages? ",
+        "synonyms": [
+          " Can postgraduate students enrol in the Diploma in Languages? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an international student when do applications close? ",
+        "synonyms": [
+          " I am an international student when do applications close? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get a refund of the Student Services and Amenities Fee SSAF if I have to withdraw from study after the census date? ",
+        "synonyms": [
+          " Can I get a refund of the Student Services and Amenities Fee SSAF if I have to withdraw from study after the census date? "
+        ]
+      } ,
+    
+      {
+        "value" : " Do I need a library card to borrow? ",
+        "synonyms": [
+          " Do I need a library card to borrow? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am here on a working/tourist visa. I submitted an application to study and hope to get a confirmed offer before my current visa expires. If my visa expires before then, can I extend it? ",
+        "synonyms": [
+          " I am here on a working/tourist visa. I submitted an application to study and hope to get a confirmed offer before my current visa expires. If my visa expires before then, can I extend it? "
+        ]
+      } ,
+    
+      {
+        "value" : " Where is the Gatton campus? ",
+        "synonyms": [
+          " Where is the Gatton campus? "
+        ]
+      } ,
+    
+      {
+        "value" : " What business programs does UQ offer? ",
+        "synonyms": [
+          " What business programs does UQ offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study an undergraduate degree in Communication for Social Change? ",
+        "synonyms": [
+          " Can I study an undergraduate degree in Communication for Social Change? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the Institute for Social Science Research ISSR? ",
+        "synonyms": [
+          " What is the Institute for Social Science Research ISSR? "
+        ]
+      } ,
+    
+      {
+        "value" : " What languages can I study in the Diploma in Languages? ",
+        "synonyms": [
+          " What languages can I study in the Diploma in Languages? "
+        ]
+      } ,
+    
+      {
+        "value" : " What career will the School of Public Health program lead to? ",
+        "synonyms": [
+          " What career will the School of Public Health program lead to? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the teaching facilities for journalism and communication at UQ? ",
+        "synonyms": [
+          " What are the teaching facilities for journalism and communication at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the closing date for applications to the Master of Business Administration MBA program? ",
+        "synonyms": [
+          " What is the closing date for applications to the Master of Business Administration MBA program? "
+        ]
+      } ,
+    
+      {
+        "value" : " I plan to travel overseas where can I learn the basics of a foreign language? ",
+        "synonyms": [
+          " I plan to travel overseas where can I learn the basics of a foreign language? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study a language in the Bachelor of Arts and the Diploma in Languages at the same time? ",
+        "synonyms": [
+          " Can I study a language in the Bachelor of Arts and the Diploma in Languages at the same time? "
+        ]
+      } ,
+    
+      {
+        "value" : " How early should I start planning for my exchange? ",
+        "synonyms": [
+          " How early should I start planning for my exchange? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I accept my offer? Australian ",
+        "synonyms": [
+          " How do I accept my offer? Australian "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I apply for the Diploma in Music Performance? ",
+        "synonyms": [
+          " How do I apply for the Diploma in Music Performance? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is OP Results Advice Night? ",
+        "synonyms": [
+          " What is OP Results Advice Night? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I get credit for previous study to go towards a Master of Communication for Social Change? ",
+        "synonyms": [
+          " Can I get credit for previous study to go towards a Master of Communication for Social Change? "
+        ]
+      } ,
+    
+      {
+        "value" : " Can I study a language not offered at UQ? ",
+        "synonyms": [
+          " Can I study a language not offered at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my career opportunities with a journalism degree? ",
+        "synonyms": [
+          " What are my career opportunities with a journalism degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is the UQ Link Program? ",
+        "synonyms": [
+          " What is the UQ Link Program? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the entry requirements for a Graduate Diploma in Education GDipEd? ",
+        "synonyms": [
+          " What are the entry requirements for a Graduate Diploma in Education GDipEd? "
+        ]
+      } ,
+    
+      {
+        "value" : " What is TSXPO? ",
+        "synonyms": [
+          " What is TSXPO? "
+        ]
+      } ,
+    
+      {
+        "value" : " What law programs does UQ offer? ",
+        "synonyms": [
+          " What law programs does UQ offer? "
+        ]
+      } ,
+    
+      {
+        "value" : " What if I don't get the BEL Faculty program I chose first? ",
+        "synonyms": [
+          " What if I don't get the BEL Faculty program I chose first? "
+        ]
+      } ,
+    
+      {
+        "value" : " What Communication for Social Change programs can I study? ",
+        "synonyms": [
+          " What Communication for Social Change programs can I study? "
+        ]
+      } ,
+    
+      {
+        "value" : " Does the Centre for Communication and Social Change support PhD candidates? ",
+        "synonyms": [
+          " Does the Centre for Communication and Social Change support PhD candidates? "
+        ]
+      } ,
+    
+      {
+        "value" : " How can I contact the Centre for Communication and Social Change? ",
+        "synonyms": [
+          " How can I contact the Centre for Communication and Social Change? "
+        ]
+      } ,
+    
+      {
+        "value" : " How do I become a qualified pharmacist? ",
+        "synonyms": [
+          " How do I become a qualified pharmacist? "
+        ]
+      } ,
+    
+      {
+        "value" : " What career opportunities will I have with an archaeology degree? ",
+        "synonyms": [
+          " What career opportunities will I have with an archaeology degree? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are my student contribution payment options as a Commonwealth supported student? ",
+        "synonyms": [
+          " What are my student contribution payment options as a Commonwealth supported student? "
+        ]
+      } ,
+    
+      {
+        "value" : " What are the student contribution amounts for Commonwealth supported students? ",
+        "synonyms": [
+          " What are the student contribution amounts for Commonwealth supported students? "
+        ]
+      } ,
+    
+      {
+        "value" : " When do I need to lodge my Request for SA-HELP Assistance form? ",
+        "synonyms": [
+          " When do I need to lodge my Request for SA-HELP Assistance form? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an American student can I apply for a US student loan to study at UQ? ",
+        "synonyms": [
+          " I am an American student can I apply for a US student loan to study at UQ? "
+        ]
+      } ,
+    
+      {
+        "value" : " I am an American student can I defer repayments on my US student loans while I study at UQ? ",
+        "synonyms": [
+          " I am an American student can I defer repayments on my US student loans while I study at UQ? "
+        ]
+      } 
+    
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
